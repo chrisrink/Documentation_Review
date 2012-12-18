@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsEndpoint:RepositoryEndpoint xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:nsEndpoint="http://xcp.emc.com/endpoint" urn="urn:doc:com.emc.xcp.artifact.endpoint:Artifacts/Endpoints/applicaiton_reposit.endpoint" categoryId="com.emc.xcp.artifact.endpoint" name="applicaiton_reposit" label="Applicaiton Repository" docbrokerHostName="10.8.40.51" docbrokerPort="1589" repositoryName="xcp" username="dmadmin" password="DM_ENCR_TEXT_V2=AAAAEBHijS0Y8FIyRMXWdLpNt3WyaDsXIdZmBkDwlYS84aulhI/susAa+EPipLigC8jVTRkv5V92rCEHgVxyx7M6mb0="/>

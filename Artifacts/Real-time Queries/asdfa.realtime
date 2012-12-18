@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<realtime:RealTimeSearch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" xmlns:realtime="http://xcp.emc.com/search/realtime" urn="urn:doc:com.emc.xcp.artifact.search.realtime:Artifacts/Real-time Queries/asdfa.realtime" categoryId="com.emc.xcp.artifact.search.realtime" name="asdfa" label="asdfa">
+  <datasource categoryId="com.emc.xcp.artifact.dataservice.datasourcecontract" name="asdfa" label="asdfa" implCategoryId="com.emc.xcp.artifact.search.realtime">
+    <outputs xsi:type="nsDataserviceContract:AttributeElement" name="Result Count">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </outputs>
+    <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+      <item xsi:type="nsDataserviceContract:StructureElement" name="Items"/>
+    </outputs>
+    <primaryElement>
+      <dataModel href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+    </primaryElement>
+  </datasource>
+  <defaultSort ascending="true"/>
+  <dataType xsi:type="nsDatatypes:Document" href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+  <resultOrientation>
+    <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+  </resultOrientation>
+</realtime:RealTimeSearch>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsPicklist:Picklist xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsPicklist="http://xcp.emc.com/picklist" urn="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/status.picklist" categoryId="com.emc.xcp.artifact.picklist" name="status" label="Status">
+  <type xsi:type="nsAttributeDatatypes:StringType"/>
+  <entries label="In Progress" value="In Progress"/>
+  <entries label="Initial Review" value="Initial Review"/>
+  <entries label="Reviews in Progress" value="Reviews in Progress"/>
+  <entries label="Revision in Progress" value="Revision in Progress"/>
+  <entries label="Approved" value="Approved"/>
+</nsPicklist:Picklist>

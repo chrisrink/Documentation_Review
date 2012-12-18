@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsDatatypes:BusinessObject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" urn="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj" categoryId="com.emc.xcp.artifact.bo" name="team" label="Team">
+  <attributes name="engineers" label="Engineers" repeating="true">
+    <type xsi:type="nsAttributeDatatypes:StringType" length="200"/>
+  </attributes>
+  <attributes name="product_manager" label="Product Manager">
+    <type xsi:type="nsAttributeDatatypes:StringType" length="200"/>
+  </attributes>
+  <attributes name="quality_engineers" label="Quality Engineers" repeating="true">
+    <type xsi:type="nsAttributeDatatypes:StringType" length="200"/>
+  </attributes>
+  <attributes name="documentation_writers" label="Documentation Writers">
+    <type xsi:type="nsAttributeDatatypes:StringType" length="64"/>
+  </attributes>
+  <attributes name="user_experience_designers" label="User Experience Designers" repeating="true">
+    <type xsi:type="nsAttributeDatatypes:StringType" length="200"/>
+  </attributes>
+  <attributes name="engineering_manager" label="Engineering Manager">
+    <type xsi:type="nsAttributeDatatypes:StringType" length="200"/>
+  </attributes>
+  <accessControlPolicy>
+    <default href="urn:doc:com.emc.xcp.artifact.permissionset:Artifacts/Permission Sets/team_permissions.permissionset#/"/>
+  </accessControlPolicy>
+  <defaultFolderPath exprStr="parameters.doc.team_home"/>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_create_team" label="Create Team" implCategoryId="com.emc.xcp.artifact.bo">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="documentation_writers" label="Documentation Writers">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="engineering_manager" label="Engineering Manager">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="engineers" label="Engineers" repeating="true">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="product_manager" label="Product Manager">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="quality_engineers" label="Quality Engineers" repeating="true">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="user_experience_designers" label="User Experience Designers" repeating="true">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Create"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_update_team" label="Update Team" implCategoryId="com.emc.xcp.artifact.bo">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="documentation_writers" label="Documentation Writers">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="engineering_manager" label="Engineering Manager">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="engineers" label="Engineers" repeating="true">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="product_manager" label="Product Manager">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="quality_engineers" label="Quality Engineers" repeating="true">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="user_experience_designers" label="User Experience Designers" repeating="true">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Update"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_delete_team" label="Delete Team" implCategoryId="com.emc.xcp.artifact.bo">
+    <primaryElement dataModel="/"/>
+    <actionType type="Delete"/>
+  </dataActionContracts>
+  <superType xsi:type="nsDatatypes:BusinessObject" href="urn:xcp:com.emc.xcp.artifact.bo:Artifacts/Business Objects/rootbo.businessobj#/"/>
+</nsDatatypes:BusinessObject>

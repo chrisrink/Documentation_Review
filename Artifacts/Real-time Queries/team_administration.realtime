@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<realtime:RealTimeSearch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" xmlns:realtime="http://xcp.emc.com/search/realtime" urn="urn:doc:com.emc.xcp.artifact.search.realtime:Artifacts/Real-time Queries/team_administration.realtime" categoryId="com.emc.xcp.artifact.search.realtime" name="team_administration" label="Team Administration">
+  <datasource categoryId="com.emc.xcp.artifact.dataservice.datasourcecontract" name="team_administration" label="Team Administration" implCategoryId="com.emc.xcp.artifact.search.realtime">
+    <outputs xsi:type="nsDataserviceContract:AttributeElement" name="Result Count">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </outputs>
+    <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+      <item xsi:type="nsDataserviceContract:StructureElement" name="Items">
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="object_name" label="Name" sortable="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="product_manager" label="Product Manager">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="engineering_manager" label="Engineering Manager">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="user_experience_designers" label="User Experience Designers" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="documentation_writers" label="Documentation Writers">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="engineers" label="Engineers" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="quality_engineers" label="Quality Engineers" repeating="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="id" label="Object ID">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="r_object_type" label="Object type" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+      </item>
+    </outputs>
+    <primaryElement>
+      <dataModel href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+    </primaryElement>
+  </datasource>
+  <columns label="Name" sortable="true">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='object_name']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Product Manager">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#//@attributes[name='product_manager']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Engineering Manager">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#//@attributes[name='engineering_manager']"/>
+    </contextSelection>
+  </columns>
+  <columns label="User Experience Designers">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#//@attributes[name='user_experience_designers']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Documentation Writers">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#//@attributes[name='documentation_writers']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Engineers">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#//@attributes[name='engineers']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Quality Engineers">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#//@attributes[name='quality_engineers']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Object ID">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='r_object_id']"/>
+    </contextSelection>
+  </columns>
+  <defaultSort>
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='r_modify_date']"/>
+    </contextSelection>
+  </defaultSort>
+  <dataType xsi:type="nsDatatypes:BusinessObject" href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+  <resultOrientation>
+    <dataRef href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+  </resultOrientation>
+</realtime:RealTimeSearch>

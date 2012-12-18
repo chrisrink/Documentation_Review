@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uitemplate:Page xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:uitemplate="http://www.emc.com/xcp2/2010/uitemplate" urn="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/create_a_new_team.page" categoryId="com.emc.xcp.artifact.page" name="create_a_new_team" label="create a new Team" templateType="business_object" templateScope="INSTANCE">
+  <title exprStr="create a new Team"/>
+  <rootContainer widgetEntry="//@widgetMap[key='root']">
+    <properties name="xcpId" value="root" entry="//@rootContainer/@propertyMap.0"/>
+    <propertyMap key="xcpId" value="//@rootContainer/@properties.0"/>
+    <children componentDefinitionId="xcp_rich_text" parent="//@rootContainer" widgetEntry="//@widgetMap[key='rich_text']">
+      <properties name="html" value="you go to this page" entry="//@rootContainer/@children.0/@propertyMap.0"/>
+      <properties name="hidden" value="" entry="//@rootContainer/@children.0/@propertyMap.1"/>
+      <properties name="xcpId" value="rich_text" entry="//@rootContainer/@children.0/@propertyMap.2"/>
+      <propertyMap key="html" value="//@rootContainer/@children.0/@properties.0"/>
+      <propertyMap key="hidden" value="//@rootContainer/@children.0/@properties.1"/>
+      <propertyMap key="xcpId" value="//@rootContainer/@children.0/@properties.2"/>
+    </children>
+  </rootContainer>
+  <widgetMap key="root" value="//@rootContainer"/>
+  <widgetMap key="rich_text" value="//@rootContainer/@children.0"/>
+  <primaryModel href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+</uitemplate:Page>

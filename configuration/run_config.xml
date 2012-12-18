@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ApplicationConfiguration description="" version="1.0.0" namespace="doc" application-name="Documentation_Review">
+    <configuration id="com.emc.xcp.artifact.endpoint" namespace="doc" name="applicaiton_reposit" type="RepositoryEndpoint">
+        <property name="description"></property>
+        <property name="docbrokerHostName">10.8.40.105</property>
+        <property name="docbrokerPort">1589</property>
+        <property name="repositoryName">xcp</property>
+        <property name="username">dmadmin</property>
+        <property name="password">DM_ENCR_TEXT_V2=AAAAEBHijS0Y8FIyRMXWdLpNt3WyaDsXIdZmBkDwlYS84aulhI/susAa+EPipLigC8jVTRkv5V92rCEHgVxyx7M6mb0=</property>
+        <property name="domain"></property>
+    </configuration>
+    <configuration id="com.emc.xcp.artifact.appparameter" namespace="doc" name="default_iteration" type="STRING">
+        <property name="value">C22</property>
+    </configuration>
+    <configuration id="com.emc.xcp.artifact.appparameter" namespace="doc" name="stories_home" type="FOLDER">
+        <property name="value">/Documentation/Stories</property>
+    </configuration>
+    <configuration id="com.emc.xcp.artifact.endpoint" namespace="kitchen" name="app_repo" type="RepositoryEndpoint">
+        <property name="description"></property>
+        <property name="docbrokerHostName">10.8.42.105</property>
+        <property name="docbrokerPort">1589</property>
+        <property name="repositoryName">xcp</property>
+        <property name="username">dmadmin</property>
+        <property name="password">DM_ENCR_TEXT_V2=AAAAEC/wA2VLYWTDVlhocxhk4UxSaHxmLpsTG8xnyeUOH8y3Nj1sTiCjVNIXl+DuSS2sFYWk8pKXhIF2qrS9szIRDg8=</property>
+        <property name="domain"></property>
+    </configuration>
+    <configuration id="com.emc.xcp.artifact.appparameter" namespace="doc" name="dmadmin" type="USER">
+        <property name="value">dmadmin</property>
+    </configuration>
+    <configuration id="com.emc.xcp.artifact.appparameter" namespace="doc" name="team_home" type="FOLDER">
+        <property name="value">/Documentation/Teams</property>
+    </configuration>
+    <configuration id="com.emc.xcp.artifact.appparameter" namespace="doc" name="application_home" type="FOLDER">
+        <property name="value">/Temp</property>
+    </configuration>
+</ApplicationConfiguration>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Assets">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="Asset">
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded">								
+							<xs:element name="Attribute">
+								<xs:complexType>	
+									<xs:simpleContent>  
+										<xs:extension base="xs:string">							
+											<xs:attribute name="name"/>
+										</xs:extension>
+									</xs:simpleContent>	
+								</xs:complexType>
+							</xs:element>
+								</xs:choice>
+						<xs:attribute name="href"/>
+						<xs:attribute name="id"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+			<xs:attribute name="total"/>
+			<xs:attribute name="pageSize"/>
+			<xs:attribute name="pageStart"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fulltext:FullTextSearch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fulltext="http://xcp.emc.com/search/fulltext" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" xmlns:nsPicklist="http://xcp.emc.com/picklist" urn="urn:doc:com.emc.xcp.artifact.search.fulltext:Artifacts/Full-text Queries/stories.fulltext" categoryId="com.emc.xcp.artifact.search.fulltext" name="stories" label="Stories" fuzzy="true" summaryColumn="true">
+  <datasource categoryId="com.emc.xcp.artifact.dataservice.datasourcecontract" name="stories" label="Stories" implCategoryId="com.emc.xcp.artifact.search.fulltext">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="q" label="Full-Text">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <outputs xsi:type="nsDataserviceContract:AttributeElement" name="Result Count">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </outputs>
+    <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+      <item xsi:type="nsDataserviceContract:StructureElement" name="Items">
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="object_name" label="Name">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="title" label="Title">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="iteration" label="Iteration">
+          <attributeType xsi:type="nsPicklist:PickListType">
+            <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/iteration.picklist#/"/>
+          </attributeType>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="status" label="Status">
+          <attributeType xsi:type="nsPicklist:PickListType">
+            <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/status.picklist#/"/>
+          </attributeType>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="ismmf" label="isMMF">
+          <attributeType xsi:type="nsAttributeDatatypes:BooleanType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="id" label="Object ID" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="r_object_type" label="Object type" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="summary" label="Summary" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="matchingterms" label="MatchingTerms" repeating="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+      </item>
+    </outputs>
+    <primaryElement>
+      <dataModel href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+    </primaryElement>
+    <facets name="facet_status" label="Status">
+      <facetType xsi:type="nsDataserviceContract:AttributeDataTypeFacet">
+        <attributeType xsi:type="nsPicklist:PickListType" href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='status']/@type"/>
+      </facetType>
+    </facets>
+    <facets name="facet_iteration" label="Iteration">
+      <facetType xsi:type="nsDataserviceContract:AttributeDataTypeFacet">
+        <attributeType xsi:type="nsPicklist:PickListType" href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='iteration']/@type"/>
+      </facetType>
+    </facets>
+    <facets name="facet_ismmf" label="isMMF">
+      <facetType xsi:type="nsDataserviceContract:AttributeDataTypeFacet">
+        <attributeType xsi:type="nsAttributeDatatypes:BooleanType" href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='ismmf']/@type"/>
+      </facetType>
+    </facets>
+  </datasource>
+  <columns label="Name">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='object_name']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Title">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.folder:Artifacts/Folders/dm_folder.folder#//@attributes[name='title']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Iteration">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='iteration']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Status">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='status']"/>
+    </contextSelection>
+  </columns>
+  <columns label="isMMF">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='ismmf']"/>
+    </contextSelection>
+  </columns>
+  <defaultSort/>
+  <dataType xsi:type="nsDatatypes:Folder" href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+  <filters xsi:type="fulltext:StringFilter" name="status" label="Status" orderBy="FREQUENCY">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='status']"/>
+    </contextSelection>
+    <groupBy xsi:type="fulltext:StringGroupBy"/>
+  </filters>
+  <filters xsi:type="fulltext:StringFilter" name="iteration" label="Iteration" orderBy="FREQUENCY">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='iteration']"/>
+    </contextSelection>
+    <groupBy xsi:type="fulltext:StringGroupBy"/>
+  </filters>
+  <filters xsi:type="fulltext:BooleanFilter" name="ismmf" label="isMMF" orderBy="FREQUENCY">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='ismmf']"/>
+    </contextSelection>
+    <groupBy xsi:type="fulltext:BooleanGroupBy"/>
+  </filters>
+</fulltext:FullTextSearch>

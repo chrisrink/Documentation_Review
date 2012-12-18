@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uitemplate:Page xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uitemplate="http://www.emc.com/xcp2/2010/uitemplate" urn="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/admin_master.page" categoryId="com.emc.xcp.artifact.page" name="admin_master" label="Admin Master" templateType="application_master" isRoleVersion="true">
+  <title exprStr="appmaster_defpage"/>
+  <rootContainer widgetEntry="//@widgetMap[key='root']">
+    <properties name="xcpId" value="root" entry="//@rootContainer/@propertyMap.0"/>
+    <propertyMap key="xcpId" value="//@rootContainer/@properties.0"/>
+    <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_column_box" parent="//@rootContainer" widgetEntry="//@widgetMap[key='column_box']">
+      <properties name="title" value="" entry="//@rootContainer/@children.0/@propertyMap.0"/>
+      <properties name="collapsible" value="false" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.1"/>
+      <properties name="collapsed" value="false" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.2"/>
+      <properties name="collapseFirst" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.3"/>
+      <properties name="border" value="false" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.4"/>
+      <properties name="defaultMargins" value="5" entry="//@rootContainer/@children.0/@propertyMap.5"/>
+      <properties name="margins" value="" entry="//@rootContainer/@children.0/@propertyMap.6"/>
+      <properties name="layout" value="xcp_columnbox" entry="//@rootContainer/@children.0/@propertyMap.7"/>
+      <properties name="hidden" value="" entry="//@rootContainer/@children.0/@propertyMap.8"/>
+      <properties name="cls" value="xcp-master-header" entry="//@rootContainer/@children.0/@propertyMap.9"/>
+      <properties name="xcpId" value="column_box" entry="//@rootContainer/@children.0/@propertyMap.10"/>
+      <propertyMap key="title" value="//@rootContainer/@children.0/@properties.0"/>
+      <propertyMap key="collapsible" value="//@rootContainer/@children.0/@properties.1"/>
+      <propertyMap key="collapsed" value="//@rootContainer/@children.0/@properties.2"/>
+      <propertyMap key="collapseFirst" value="//@rootContainer/@children.0/@properties.3"/>
+      <propertyMap key="border" value="//@rootContainer/@children.0/@properties.4"/>
+      <propertyMap key="defaultMargins" value="//@rootContainer/@children.0/@properties.5"/>
+      <propertyMap key="margins" value="//@rootContainer/@children.0/@properties.6"/>
+      <propertyMap key="layout" value="//@rootContainer/@children.0/@properties.7"/>
+      <propertyMap key="hidden" value="//@rootContainer/@children.0/@properties.8"/>
+      <propertyMap key="cls" value="//@rootContainer/@children.0/@properties.9"/>
+      <propertyMap key="xcpId" value="//@rootContainer/@children.0/@properties.10"/>
+      <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_columnhbox" parent="//@rootContainer/@children.0" widgetEntry="//@widgetMap[key='columnhbox']">
+        <properties name="orientation" value="Horizontal" entry="//@rootContainer/@children.0/@children.0/@propertyMap.0"/>
+        <properties name="width" value="100%" entry="//@rootContainer/@children.0/@children.0/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@propertyMap.2"/>
+        <properties name="overflow_x" value="hidden" entry="//@rootContainer/@children.0/@children.0/@propertyMap.3"/>
+        <properties name="split" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@propertyMap.4"/>
+        <properties name="labelWidth" value="50" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@propertyMap.5"/>
+        <properties name="defaultMargins" value="0" entry="//@rootContainer/@children.0/@children.0/@propertyMap.6"/>
+        <properties name="margins" value="0" entry="//@rootContainer/@children.0/@children.0/@propertyMap.7"/>
+        <properties name="labelAlign" value="left" entry="//@rootContainer/@children.0/@children.0/@propertyMap.8"/>
+        <properties name="halign" value="left" entry="//@rootContainer/@children.0/@children.0/@propertyMap.9"/>
+        <properties name="valign" value="bottom" entry="//@rootContainer/@children.0/@children.0/@propertyMap.10"/>
+        <properties name="xcpId" value="columnhbox" entry="//@rootContainer/@children.0/@children.0/@propertyMap.11"/>
+        <propertyMap key="orientation" value="//@rootContainer/@children.0/@children.0/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.0/@children.0/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.0/@children.0/@properties.2"/>
+        <propertyMap key="overflow_x" value="//@rootContainer/@children.0/@children.0/@properties.3"/>
+        <propertyMap key="split" value="//@rootContainer/@children.0/@children.0/@properties.4"/>
+        <propertyMap key="labelWidth" value="//@rootContainer/@children.0/@children.0/@properties.5"/>
+        <propertyMap key="defaultMargins" value="//@rootContainer/@children.0/@children.0/@properties.6"/>
+        <propertyMap key="margins" value="//@rootContainer/@children.0/@children.0/@properties.7"/>
+        <propertyMap key="labelAlign" value="//@rootContainer/@children.0/@children.0/@properties.8"/>
+        <propertyMap key="halign" value="//@rootContainer/@children.0/@children.0/@properties.9"/>
+        <propertyMap key="valign" value="//@rootContainer/@children.0/@children.0/@properties.10"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@properties.11"/>
+        <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_navigation_menu" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='navigation_menu']">
+          <properties name="orientation" value="horizontal" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.0"/>
+          <properties name="xcp_menu_onhover" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.1"/>
+          <properties name="autoHeight" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.2"/>
+          <properties name="autoScroll" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.3"/>
+          <properties name="autoWidth" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.4"/>
+          <properties name="enableOverflow" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.5"/>
+          <properties name="width" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.6"/>
+          <properties name="height" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.7"/>
+          <properties name="buttonAlign" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.8"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.9"/>
+          <properties name="cls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.10"/>
+          <properties name="xcpId" value="navigation_menu" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.11"/>
+          <propertyMap key="orientation" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.0"/>
+          <propertyMap key="xcp_menu_onhover" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.1"/>
+          <propertyMap key="autoHeight" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.2"/>
+          <propertyMap key="autoScroll" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.3"/>
+          <propertyMap key="autoWidth" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.4"/>
+          <propertyMap key="enableOverflow" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.5"/>
+          <propertyMap key="width" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.6"/>
+          <propertyMap key="height" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.7"/>
+          <propertyMap key="buttonAlign" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.8"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.9"/>
+          <propertyMap key="cls" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.10"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.11"/>
+          <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_button" parent="//@rootContainer/@children.0/@children.0/@children.0" widgetEntry="//@widgetMap[key='nav_button8']">
+            <properties name="text" value="Reviews" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.0"/>
+            <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.1"/>
+            <properties name="xcp_menu_onhover" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.2"/>
+            <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.3"/>
+            <properties name="xcp_link_type" value="application" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.4"/>
+            <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="#application/doc_home" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.5">
+              <data selectionName="home" selectionLabel="Home">
+                <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/home.page#/"/>
+              </data>
+            </properties>
+            <properties name="xcpId" value="nav_button8" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@propertyMap.6"/>
+            <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@properties.0"/>
+            <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@properties.1"/>
+            <propertyMap key="xcp_menu_onhover" value="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@properties.2"/>
+            <propertyMap key="xcp_nav_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@properties.3"/>
+            <propertyMap key="xcp_link_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@properties.4"/>
+            <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@properties.5"/>
+            <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.0/@properties.6"/>
+          </children>
+          <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_button" parent="//@rootContainer/@children.0/@children.0/@children.0" widgetEntry="//@widgetMap[key='nav_button7']">
+            <properties name="text" value="All Reviews" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@propertyMap.0"/>
+            <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@propertyMap.1"/>
+            <properties name="xcp_menu_onhover" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@propertyMap.2"/>
+            <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@propertyMap.3"/>
+            <properties name="xcp_link_type" value="application" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@propertyMap.4"/>
+            <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="#application/doc_all_reviews" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@propertyMap.5">
+              <data selectionName="all_reviews" selectionLabel="All Reviews">
+                <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/all_reviews.page#/"/>
+              </data>
+            </properties>
+            <properties name="xcpId" value="nav_button7" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@propertyMap.6"/>
+            <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@properties.0"/>
+            <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@properties.1"/>
+            <propertyMap key="xcp_menu_onhover" value="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@properties.2"/>
+            <propertyMap key="xcp_nav_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@properties.3"/>
+            <propertyMap key="xcp_link_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@properties.4"/>
+            <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@properties.5"/>
+            <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.1/@properties.6"/>
+          </children>
+          <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_button" parent="//@rootContainer/@children.0/@children.0/@children.0" widgetEntry="//@widgetMap[key='nav_button6']">
+            <properties name="text" value="Stories" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.0"/>
+            <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.1"/>
+            <properties name="xcp_menu_onhover" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.2"/>
+            <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.3"/>
+            <properties name="xcp_link_type" value="application" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.4"/>
+            <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="#application/doc_stories" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.5">
+              <data selectionName="stories" selectionLabel="Stories">
+                <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/stories.page#/"/>
+              </data>
+            </properties>
+            <properties name="xcpId" value="nav_button6" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@propertyMap.6"/>
+            <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.0"/>
+            <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.1"/>
+            <propertyMap key="xcp_menu_onhover" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.2"/>
+            <propertyMap key="xcp_nav_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.3"/>
+            <propertyMap key="xcp_link_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.4"/>
+            <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.5"/>
+            <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2/@properties.6"/>
+          </children>
+          <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_button" parent="//@rootContainer/@children.0/@children.0/@children.0" widgetEntry="//@widgetMap[key='nav_button']">
+            <properties name="text" value="Browse" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@propertyMap.0"/>
+            <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@propertyMap.1"/>
+            <properties name="xcp_menu_onhover" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@propertyMap.2"/>
+            <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@propertyMap.3"/>
+            <properties name="xcp_link_type" value="application" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@propertyMap.4"/>
+            <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="#application/doc_browse" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@propertyMap.5">
+              <data selectionName="browse" selectionLabel="Browse">
+                <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/browse.page#/"/>
+              </data>
+            </properties>
+            <properties name="xcpId" value="nav_button" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@propertyMap.6"/>
+            <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@properties.0"/>
+            <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@properties.1"/>
+            <propertyMap key="xcp_menu_onhover" value="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@properties.2"/>
+            <propertyMap key="xcp_nav_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@properties.3"/>
+            <propertyMap key="xcp_link_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@properties.4"/>
+            <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@properties.5"/>
+            <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.3/@properties.6"/>
+          </children>
+          <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_button" parent="//@rootContainer/@children.0/@children.0/@children.0" widgetEntry="//@widgetMap[key='nav_button2']">
+            <properties name="text" value="Administration" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@propertyMap.0"/>
+            <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@propertyMap.1"/>
+            <properties name="xcp_menu_onhover" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@propertyMap.2"/>
+            <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@propertyMap.3"/>
+            <properties name="xcp_link_type" value="none" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@propertyMap.4"/>
+            <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@propertyMap.5"/>
+            <properties name="xcpId" value="nav_button2" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@propertyMap.6"/>
+            <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@properties.0"/>
+            <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@properties.1"/>
+            <propertyMap key="xcp_menu_onhover" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@properties.2"/>
+            <propertyMap key="xcp_nav_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@properties.3"/>
+            <propertyMap key="xcp_link_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@properties.4"/>
+            <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@properties.5"/>
+            <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@properties.6"/>
+            <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_menu" parent="//@rootContainer/@children.0/@children.0/@children.0/@children.4" widgetEntry="//@widgetMap[key='menu']">
+              <properties name="xcpId" value="menu" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@propertyMap.0"/>
+              <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@properties.0"/>
+              <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_menuitem" parent="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0" widgetEntry="//@widgetMap[key='nav_menuitem']">
+                <properties name="text" value="Team Administration" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@propertyMap.0"/>
+                <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@propertyMap.1"/>
+                <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="#application/doc_team_administration" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@propertyMap.2">
+                  <data selectionName="team_administration" selectionLabel="Team Administration">
+                    <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/team_administration.page#/"/>
+                  </data>
+                </properties>
+                <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@propertyMap.3"/>
+                <properties name="xcp_link_type" value="application" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@propertyMap.4"/>
+                <properties name="xcpId" value="nav_menuitem" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@propertyMap.5"/>
+                <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@properties.0"/>
+                <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@properties.1"/>
+                <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@properties.2"/>
+                <propertyMap key="xcp_nav_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@properties.3"/>
+                <propertyMap key="xcp_link_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@properties.4"/>
+                <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0/@properties.5"/>
+              </children>
+              <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_menuitem" parent="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0" widgetEntry="//@widgetMap[key='nav_menuitem4']">
+                <properties name="text" value="User list" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@propertyMap.0"/>
+                <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@propertyMap.1"/>
+                <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="#application/doc_user_list" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@propertyMap.2">
+                  <data selectionName="user_list" selectionLabel="User List">
+                    <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/user_list.page#/"/>
+                  </data>
+                </properties>
+                <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@propertyMap.3"/>
+                <properties name="xcp_link_type" value="application" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@propertyMap.4"/>
+                <properties name="xcpId" value="nav_menuitem4" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@propertyMap.5"/>
+                <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@properties.0"/>
+                <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@properties.1"/>
+                <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@properties.2"/>
+                <propertyMap key="xcp_nav_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@properties.3"/>
+                <propertyMap key="xcp_link_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@properties.4"/>
+                <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1/@properties.5"/>
+              </children>
+              <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_menuitem" parent="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0" widgetEntry="//@widgetMap[key='nav_menuitem1']">
+                <properties name="text" value="Application Parameters" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@propertyMap.0"/>
+                <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@propertyMap.1"/>
+                <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="#doc_application_parameter" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@propertyMap.2">
+                  <data selectionName="application_parameter" selectionLabel="Manage Application Parameters">
+                    <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/application_parameter.page#/"/>
+                  </data>
+                </properties>
+                <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@propertyMap.3"/>
+                <properties name="xcp_link_type" value="application" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@propertyMap.4"/>
+                <properties name="xcpId" value="nav_menuitem1" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@propertyMap.5"/>
+                <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@properties.0"/>
+                <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@properties.1"/>
+                <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@properties.2"/>
+                <propertyMap key="xcp_nav_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@properties.3"/>
+                <propertyMap key="xcp_link_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@properties.4"/>
+                <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2/@properties.5"/>
+              </children>
+              <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_nav_menuitem" parent="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0" widgetEntry="//@widgetMap[key='nav_menuitem2']">
+                <properties name="text" value="Application Roles" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@propertyMap.0"/>
+                <properties name="iconCls" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@propertyMap.1"/>
+                <properties xsi:type="uitemplate:DataboundProperty" name="xcp_nav_url" value="#doc_manage_app_role" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@propertyMap.2">
+                  <data selectionName="manage_app_role" selectionLabel="Manage Application Roles">
+                    <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/manage_app_role.page#/"/>
+                  </data>
+                </properties>
+                <properties name="xcp_nav_type" value="page" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@propertyMap.3"/>
+                <properties name="xcp_link_type" value="application" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@propertyMap.4"/>
+                <properties name="xcpId" value="nav_menuitem2" entry="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@propertyMap.5"/>
+                <propertyMap key="text" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@properties.0"/>
+                <propertyMap key="iconCls" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@properties.1"/>
+                <propertyMap key="xcp_nav_url" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@properties.2"/>
+                <propertyMap key="xcp_nav_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@properties.3"/>
+                <propertyMap key="xcp_link_type" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@properties.4"/>
+                <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3/@properties.5"/>
+              </children>
+            </children>
+          </children>
+        </children>
+        <children componentDefinitionId="xcp_user_button" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='user_button']">
+          <properties name="xcpId" value="user_button" entry="//@rootContainer/@children.0/@children.0/@children.1/@propertyMap.0"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.1/@properties.0"/>
+        </children>
+      </children>
+    </children>
+    <children componentDefinitionId="xcp_page" parent="//@rootContainer" widgetEntry="//@widgetMap[key='page']">
+      <properties name="cls" value="xcp-content-area" entry="//@rootContainer/@children.1/@propertyMap.0"/>
+      <properties name="margin" value="10 10 10 10" entry="//@rootContainer/@children.1/@propertyMap.1"/>
+      <properties name="xcpId" value="page" entry="//@rootContainer/@children.1/@propertyMap.2"/>
+      <propertyMap key="cls" value="//@rootContainer/@children.1/@properties.0"/>
+      <propertyMap key="margin" value="//@rootContainer/@children.1/@properties.1"/>
+      <propertyMap key="xcpId" value="//@rootContainer/@children.1/@properties.2"/>
+    </children>
+    <children componentDefinitionId="xcp_image" parent="//@rootContainer" widgetEntry="//@widgetMap[key='image']">
+      <properties name="alternateText" value="" entry="//@rootContainer/@children.2/@propertyMap.0"/>
+      <properties name="imageSource" value="" entry="//@rootContainer/@children.2/@propertyMap.1"/>
+      <properties name="imageSourcePath" value="" entry="//@rootContainer/@children.2/@propertyMap.2"/>
+      <properties name="tooltip" value="" entry="//@rootContainer/@children.2/@propertyMap.3"/>
+      <properties xsi:type="uitemplate:DataboundProperty" name="internalURL" value="" entry="//@rootContainer/@children.2/@propertyMap.4"/>
+      <properties name="externalURL" value="" entry="//@rootContainer/@children.2/@propertyMap.5"/>
+      <properties name="behavior" value="false" type="BOOLEAN" entry="//@rootContainer/@children.2/@propertyMap.6"/>
+      <properties name="width" value="100" type="INTEGER" entry="//@rootContainer/@children.2/@propertyMap.7"/>
+      <properties name="height" value="100" type="INTEGER" entry="//@rootContainer/@children.2/@propertyMap.8"/>
+      <properties name="disabled" value="" entry="//@rootContainer/@children.2/@propertyMap.9"/>
+      <properties name="hidden" value="" entry="//@rootContainer/@children.2/@propertyMap.10"/>
+      <properties name="isInternal" value="true" type="BOOLEAN" entry="//@rootContainer/@children.2/@propertyMap.11"/>
+      <properties name="xcpId" value="image" entry="//@rootContainer/@children.2/@propertyMap.12"/>
+      <propertyMap key="alternateText" value="//@rootContainer/@children.2/@properties.0"/>
+      <propertyMap key="imageSource" value="//@rootContainer/@children.2/@properties.1"/>
+      <propertyMap key="imageSourcePath" value="//@rootContainer/@children.2/@properties.2"/>
+      <propertyMap key="tooltip" value="//@rootContainer/@children.2/@properties.3"/>
+      <propertyMap key="internalURL" value="//@rootContainer/@children.2/@properties.4"/>
+      <propertyMap key="externalURL" value="//@rootContainer/@children.2/@properties.5"/>
+      <propertyMap key="behavior" value="//@rootContainer/@children.2/@properties.6"/>
+      <propertyMap key="width" value="//@rootContainer/@children.2/@properties.7"/>
+      <propertyMap key="height" value="//@rootContainer/@children.2/@properties.8"/>
+      <propertyMap key="disabled" value="//@rootContainer/@children.2/@properties.9"/>
+      <propertyMap key="hidden" value="//@rootContainer/@children.2/@properties.10"/>
+      <propertyMap key="isInternal" value="//@rootContainer/@children.2/@properties.11"/>
+      <propertyMap key="xcpId" value="//@rootContainer/@children.2/@properties.12"/>
+    </children>
+  </rootContainer>
+  <widgetMap key="root" value="//@rootContainer"/>
+  <widgetMap key="column_box" value="//@rootContainer/@children.0"/>
+  <widgetMap key="columnhbox" value="//@rootContainer/@children.0/@children.0"/>
+  <widgetMap key="navigation_menu" value="//@rootContainer/@children.0/@children.0/@children.0"/>
+  <widgetMap key="nav_button2" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4"/>
+  <widgetMap key="page" value="//@rootContainer/@children.1"/>
+  <widgetMap key="menu" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0"/>
+  <widgetMap key="nav_menuitem" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.0"/>
+  <widgetMap key="nav_menuitem1" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.2"/>
+  <widgetMap key="nav_menuitem2" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.3"/>
+  <widgetMap key="image" value="//@rootContainer/@children.2"/>
+  <widgetMap key="nav_menuitem4" value="//@rootContainer/@children.0/@children.0/@children.0/@children.4/@children.0/@children.1"/>
+  <widgetMap key="nav_button6" value="//@rootContainer/@children.0/@children.0/@children.0/@children.2"/>
+  <widgetMap key="nav_button7" value="//@rootContainer/@children.0/@children.0/@children.0/@children.1"/>
+  <widgetMap key="nav_button8" value="//@rootContainer/@children.0/@children.0/@children.0/@children.0"/>
+  <widgetMap key="nav_button" value="//@rootContainer/@children.0/@children.0/@children.0/@children.3"/>
+  <widgetMap key="user_button" value="//@rootContainer/@children.0/@children.0/@children.1"/>
+  <appRoles href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/administrator.role#/"/>
+  <appRoles href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/documentation.role#/"/>
+  <appRoles href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/engineering.role#/"/>
+  <appRoles href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/product_management.role#/"/>
+  <appRoles href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/user_experience.role#/"/>
+  <defaultUITemplate xsi:type="uitemplate:Page" href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/application_master.page#/"/>
+</uitemplate:Page>

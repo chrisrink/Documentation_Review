@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsPermissionSet:PermissionSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsApprole="http://xcp2.emc.com/approle" xmlns:nsPermissionSet="http://xcp.emc.com/permissionset" urn="urn:doc:com.emc.xcp.artifact.permissionset:Artifacts/Permission Sets/story_permissions.permissionset" categoryId="com.emc.xcp.artifact.permissionset" name="story_permissions" label="Story Permissions">
+  <permissions permissionLevel="Administrate">
+    <member xsi:type="nsApprole:AppRole" href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/administrator.role#/"/>
+  </permissions>
+  <permissions permissionLevel="Administrate">
+    <member xsi:type="nsApprole:AppRole" href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/documentation.role#/"/>
+  </permissions>
+  <permissions permissionLevel="Administrate">
+    <member xsi:type="nsApprole:AppRole" href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/engineering.role#/"/>
+  </permissions>
+  <permissions permissionLevel="Administrate">
+    <member xsi:type="nsApprole:AppRole" href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/product_management.role#/"/>
+  </permissions>
+  <permissions permissionLevel="Administrate">
+    <member xsi:type="nsApprole:AppRole" href="urn:doc:com.emc.xcp.artifact.approle:Artifacts/Roles/user_experience.role#/"/>
+  </permissions>
+</nsPermissionSet:PermissionSet>

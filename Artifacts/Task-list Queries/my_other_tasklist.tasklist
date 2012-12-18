@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasklist:TaskListSearch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsPicklist="http://xcp.emc.com/picklist" xmlns:tasklist="http://xcp.emc.com/search/tasklist" urn="urn:doc:com.emc.xcp.artifact.search.tasklist:Artifacts/Task-list Queries/my_other_tasklist.tasklist" categoryId="com.emc.xcp.artifact.search.tasklist" name="my_other_tasklist" label="My other tasklist" assignment="ANY_USER" origin="SPECIFIC_PROCESS">
+  <datasource categoryId="com.emc.xcp.artifact.dataservice.datasourcecontract" name="my_other_tasklist" label="My other tasklist" implCategoryId="com.emc.xcp.artifact.search.tasklist">
+    <outputs xsi:type="nsDataserviceContract:AttributeElement" name="Result Count">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </outputs>
+    <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+      <item xsi:type="nsDataserviceContract:StructureElement" name="Items">
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="task_performer_name" label="Performer Name">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="task_subject" label="Subject">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="task_due_date" label="Due Date">
+          <attributeType xsi:type="nsAttributeDatatypes:DateTimeType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="packagesstoryobject_name" label="Name">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="packagesstorytitle" label="Title">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="packagesstoryiteration" label="Iteration">
+          <attributeType xsi:type="nsPicklist:PickListType">
+            <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/iteration.picklist#/"/>
+          </attributeType>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="packagesstorystatus" label="Status">
+          <attributeType xsi:type="nsPicklist:PickListType">
+            <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/status.picklist#/"/>
+          </attributeType>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="task_state" label="State" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="workqueue_name" label="Work Queue Name" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="task_name" label="Task Name" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="process_system_name" label="Process System Name" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="activity_system_name" label="Activity System Name" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="is_rejectable" label="Is Rejectable" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:BooleanType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="is_repeatable" label="Is Repeatable" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:BooleanType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="is_delegable" label="Is Delegable" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:BooleanType"/>
+        </elements>
+      </item>
+    </outputs>
+    <primaryElement>
+      <dataModel href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+    </primaryElement>
+  </datasource>
+  <columns label="Performer Name">
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#//@attributes.8"/>
+    </contextSelection>
+  </columns>
+  <columns label="Subject">
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#//@attributes.0"/>
+    </contextSelection>
+  </columns>
+  <columns label="Due Date">
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#//@attributes.5"/>
+    </contextSelection>
+  </columns>
+  <columns label="Name">
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="packages" selectionLabel="Packages">
+          <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        </parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='object_name']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Title">
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="packages" selectionLabel="Packages">
+          <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        </parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.folder:Artifacts/Folders/dm_folder.folder#//@attributes[name='title']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Iteration">
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="packages" selectionLabel="Packages">
+          <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        </parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='iteration']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Status">
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="packages" selectionLabel="Packages">
+          <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        </parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#//@attributes[name='status']"/>
+    </contextSelection>
+  </columns>
+  <defaultSort>
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#//@attributes.4"/>
+    </contextSelection>
+  </defaultSort>
+  <processes href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#/"/>
+</tasklist:TaskListSearch>

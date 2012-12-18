@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uitemplate:Page xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:uitemplate="http://www.emc.com/xcp2/2010/uitemplate" urn="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/team_administration.page" categoryId="com.emc.xcp.artifact.page" name="team_administration" label="Team Administration" templateType="application">
+  <title exprStr="Team Administration"/>
+  <rootContainer widgetEntry="//@widgetMap[key='root']">
+    <properties name="xcpId" value="root" entry="//@rootContainer/@propertyMap.0"/>
+    <propertyMap key="xcpId" value="//@rootContainer/@properties.0"/>
+    <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_column_box" parent="//@rootContainer" widgetEntry="//@widgetMap[key='column_box']">
+      <properties name="title" value="" entry="//@rootContainer/@children.0/@propertyMap.0"/>
+      <properties name="collapsible" value="false" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.1"/>
+      <properties name="collapsed" value="false" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.2"/>
+      <properties name="collapseFirst" value="true" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.3"/>
+      <properties name="border" value="false" type="BOOLEAN" entry="//@rootContainer/@children.0/@propertyMap.4"/>
+      <properties name="defaultMargins" value="5" entry="//@rootContainer/@children.0/@propertyMap.5"/>
+      <properties name="margins" value="" entry="//@rootContainer/@children.0/@propertyMap.6"/>
+      <properties name="layout" value="xcp_columnbox" entry="//@rootContainer/@children.0/@propertyMap.7"/>
+      <properties name="hidden" value="" entry="//@rootContainer/@children.0/@propertyMap.8"/>
+      <properties name="cls" value="" entry="//@rootContainer/@children.0/@propertyMap.9"/>
+      <properties name="xcpId" value="column_box" entry="//@rootContainer/@children.0/@propertyMap.10"/>
+      <propertyMap key="title" value="//@rootContainer/@children.0/@properties.0"/>
+      <propertyMap key="collapsible" value="//@rootContainer/@children.0/@properties.1"/>
+      <propertyMap key="collapsed" value="//@rootContainer/@children.0/@properties.2"/>
+      <propertyMap key="collapseFirst" value="//@rootContainer/@children.0/@properties.3"/>
+      <propertyMap key="border" value="//@rootContainer/@children.0/@properties.4"/>
+      <propertyMap key="defaultMargins" value="//@rootContainer/@children.0/@properties.5"/>
+      <propertyMap key="margins" value="//@rootContainer/@children.0/@properties.6"/>
+      <propertyMap key="layout" value="//@rootContainer/@children.0/@properties.7"/>
+      <propertyMap key="hidden" value="//@rootContainer/@children.0/@properties.8"/>
+      <propertyMap key="cls" value="//@rootContainer/@children.0/@properties.9"/>
+      <propertyMap key="xcpId" value="//@rootContainer/@children.0/@properties.10"/>
+      <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_columnvbox" parent="//@rootContainer/@children.0" widgetEntry="//@widgetMap[key='columnvbox']">
+        <properties name="orientation" value="Vertical" entry="//@rootContainer/@children.0/@children.0/@propertyMap.0"/>
+        <properties name="width" value="" entry="//@rootContainer/@children.0/@children.0/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@propertyMap.2"/>
+        <properties name="split" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.0/@propertyMap.3"/>
+        <properties name="overflow_x" value="hidden" entry="//@rootContainer/@children.0/@children.0/@propertyMap.4"/>
+        <properties name="labelWidth" value="150" type="INTEGER" entry="//@rootContainer/@children.0/@children.0/@propertyMap.5"/>
+        <properties name="labelAlign" value="left" entry="//@rootContainer/@children.0/@children.0/@propertyMap.6"/>
+        <properties name="halign" value="left" entry="//@rootContainer/@children.0/@children.0/@propertyMap.7"/>
+        <properties name="valign" value="top" entry="//@rootContainer/@children.0/@children.0/@propertyMap.8"/>
+        <properties name="defaultMargins" value="5" entry="//@rootContainer/@children.0/@children.0/@propertyMap.9"/>
+        <properties name="margins" value="" entry="//@rootContainer/@children.0/@children.0/@propertyMap.10"/>
+        <properties name="xcpId" value="columnvbox" entry="//@rootContainer/@children.0/@children.0/@propertyMap.11"/>
+        <propertyMap key="orientation" value="//@rootContainer/@children.0/@children.0/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.0/@children.0/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.0/@children.0/@properties.2"/>
+        <propertyMap key="split" value="//@rootContainer/@children.0/@children.0/@properties.3"/>
+        <propertyMap key="overflow_x" value="//@rootContainer/@children.0/@children.0/@properties.4"/>
+        <propertyMap key="labelWidth" value="//@rootContainer/@children.0/@children.0/@properties.5"/>
+        <propertyMap key="labelAlign" value="//@rootContainer/@children.0/@children.0/@properties.6"/>
+        <propertyMap key="halign" value="//@rootContainer/@children.0/@children.0/@properties.7"/>
+        <propertyMap key="valign" value="//@rootContainer/@children.0/@children.0/@properties.8"/>
+        <propertyMap key="defaultMargins" value="//@rootContainer/@children.0/@children.0/@properties.9"/>
+        <propertyMap key="margins" value="//@rootContainer/@children.0/@children.0/@properties.10"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@properties.11"/>
+        <children componentDefinitionId="xcp_rich_text" parent="//@rootContainer/@children.0/@children.0" widgetEntry="//@widgetMap[key='rich_text']">
+          <properties name="html" value="&lt;h1 style='font-size:20px;'>Team Administration&lt;/h1>" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.0"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.1"/>
+          <properties name="xcpId" value="rich_text" entry="//@rootContainer/@children.0/@children.0/@children.0/@propertyMap.2"/>
+          <propertyMap key="html" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.0"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.1"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.0/@children.0/@properties.2"/>
+        </children>
+      </children>
+      <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_columnhbox" parent="//@rootContainer/@children.0" widgetEntry="//@widgetMap[key='columnvbox1']">
+        <properties name="orientation" value="Horizontal" entry="//@rootContainer/@children.0/@children.1/@propertyMap.0"/>
+        <properties name="width" value="" entry="//@rootContainer/@children.0/@children.1/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.0/@children.1/@propertyMap.2"/>
+        <properties name="split" value="" type="BOOLEAN" entry="//@rootContainer/@children.0/@children.1/@propertyMap.3"/>
+        <properties name="overflow_x" value="hidden" entry="//@rootContainer/@children.0/@children.1/@propertyMap.4"/>
+        <properties name="labelWidth" value="150" type="INTEGER" entry="//@rootContainer/@children.0/@children.1/@propertyMap.5"/>
+        <properties name="labelAlign" value="left" entry="//@rootContainer/@children.0/@children.1/@propertyMap.6"/>
+        <properties name="halign" value="right" entry="//@rootContainer/@children.0/@children.1/@propertyMap.7"/>
+        <properties name="valign" value="top" entry="//@rootContainer/@children.0/@children.1/@propertyMap.8"/>
+        <properties name="defaultMargins" value="5" entry="//@rootContainer/@children.0/@children.1/@propertyMap.9"/>
+        <properties name="margins" value="" entry="//@rootContainer/@children.0/@children.1/@propertyMap.10"/>
+        <properties name="xcpId" value="columnvbox1" entry="//@rootContainer/@children.0/@children.1/@propertyMap.11"/>
+        <properties name="xtype" value="xcp_columnhbox" entry="//@rootContainer/@children.0/@children.1/@propertyMap.12"/>
+        <propertyMap key="orientation" value="//@rootContainer/@children.0/@children.1/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.0/@children.1/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.0/@children.1/@properties.2"/>
+        <propertyMap key="split" value="//@rootContainer/@children.0/@children.1/@properties.3"/>
+        <propertyMap key="overflow_x" value="//@rootContainer/@children.0/@children.1/@properties.4"/>
+        <propertyMap key="labelWidth" value="//@rootContainer/@children.0/@children.1/@properties.5"/>
+        <propertyMap key="labelAlign" value="//@rootContainer/@children.0/@children.1/@properties.6"/>
+        <propertyMap key="halign" value="//@rootContainer/@children.0/@children.1/@properties.7"/>
+        <propertyMap key="valign" value="//@rootContainer/@children.0/@children.1/@properties.8"/>
+        <propertyMap key="defaultMargins" value="//@rootContainer/@children.0/@children.1/@properties.9"/>
+        <propertyMap key="margins" value="//@rootContainer/@children.0/@children.1/@properties.10"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.1/@properties.11"/>
+        <propertyMap key="xtype" value="//@rootContainer/@children.0/@children.1/@properties.12"/>
+        <children componentDefinitionId="xcp_button" parent="//@rootContainer/@children.0/@children.1" widgetEntry="//@widgetMap[key='button1']">
+          <properties name="text" value="go to test page" entry="//@rootContainer/@children.0/@children.1/@children.0/@propertyMap.0"/>
+          <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.0/@children.1/@children.0/@propertyMap.1">
+            <action>
+              <properties name="redirectStyle" value="specified" entry="//@rootContainer/@children.0/@children.1/@children.0/@properties.1/@action/@propertyMap.0"/>
+              <properties name="actionType" value="xcp_gotopage" entry="//@rootContainer/@children.0/@children.1/@children.0/@properties.1/@action/@propertyMap.1"/>
+              <properties xsi:type="uitemplate:DataboundProperty" name="redirectUrl" value="doc_create_a_new_team" entry="//@rootContainer/@children.0/@children.1/@children.0/@properties.1/@action/@propertyMap.2">
+                <data selectionName="create_a_new_team" selectionLabel="create a new Team">
+                  <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/create_a_new_team.page#/"/>
+                </data>
+              </properties>
+              <properties name="redirectUrlModel" value="doc_team" entry="//@rootContainer/@children.0/@children.1/@children.0/@properties.1/@action/@propertyMap.3"/>
+              <propertyMap key="redirectStyle" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.1/@action/@properties.0"/>
+              <propertyMap key="actionType" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.1/@action/@properties.1"/>
+              <propertyMap key="redirectUrl" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.1/@action/@properties.2"/>
+              <propertyMap key="redirectUrlModel" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.1/@action/@properties.3"/>
+            </action>
+          </properties>
+          <properties name="actionInstanceId" value="" entry="//@rootContainer/@children.0/@children.1/@children.0/@propertyMap.2"/>
+          <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.1/@children.0/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.1/@children.0/@propertyMap.4"/>
+          <properties name="xcpId" value="button1" entry="//@rootContainer/@children.0/@children.1/@children.0/@propertyMap.5"/>
+          <propertyMap key="text" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.0"/>
+          <propertyMap key="action" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.1"/>
+          <propertyMap key="actionInstanceId" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.2"/>
+          <propertyMap key="disabled" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.4"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.1/@children.0/@properties.5"/>
+        </children>
+        <children componentDefinitionId="xcp_button" parent="//@rootContainer/@children.0/@children.1" widgetEntry="//@widgetMap[key='button']">
+          <properties name="text" value="New Team" entry="//@rootContainer/@children.0/@children.1/@children.1/@propertyMap.0"/>
+          <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.0/@children.1/@children.1/@propertyMap.1">
+            <action>
+              <properties name="redirectStyle" value="application" entry="//@rootContainer/@children.0/@children.1/@children.1/@properties.1/@action/@propertyMap.0"/>
+              <properties name="actionType" value="xcp_gotopage" entry="//@rootContainer/@children.0/@children.1/@children.1/@properties.1/@action/@propertyMap.1"/>
+              <properties xsi:type="uitemplate:DataboundProperty" name="redirectUrl" value="doc_team/doc_create_team" entry="//@rootContainer/@children.0/@children.1/@children.1/@properties.1/@action/@propertyMap.2">
+                <data selectionName="create_team" selectionLabel="Create Team">
+                  <dataRef href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/create_team.page#/"/>
+                </data>
+              </properties>
+              <propertyMap key="redirectStyle" value="//@rootContainer/@children.0/@children.1/@children.1/@properties.1/@action/@properties.0"/>
+              <propertyMap key="actionType" value="//@rootContainer/@children.0/@children.1/@children.1/@properties.1/@action/@properties.1"/>
+              <propertyMap key="redirectUrl" value="//@rootContainer/@children.0/@children.1/@children.1/@properties.1/@action/@properties.2"/>
+            </action>
+          </properties>
+          <properties name="actionInstanceId" value="" entry="//@rootContainer/@children.0/@children.1/@children.1/@propertyMap.2"/>
+          <properties name="disabled" value="" entry="//@rootContainer/@children.0/@children.1/@children.1/@propertyMap.3"/>
+          <properties name="hidden" value="" entry="//@rootContainer/@children.0/@children.1/@children.1/@propertyMap.4"/>
+          <properties name="xcpId" value="button" entry="//@rootContainer/@children.0/@children.1/@children.1/@propertyMap.5"/>
+          <propertyMap key="text" value="//@rootContainer/@children.0/@children.1/@children.1/@properties.0"/>
+          <propertyMap key="action" value="//@rootContainer/@children.0/@children.1/@children.1/@properties.1"/>
+          <propertyMap key="actionInstanceId" value="//@rootContainer/@children.0/@children.1/@children.1/@properties.2"/>
+          <propertyMap key="disabled" value="//@rootContainer/@children.0/@children.1/@children.1/@properties.3"/>
+          <propertyMap key="hidden" value="//@rootContainer/@children.0/@children.1/@children.1/@properties.4"/>
+          <propertyMap key="xcpId" value="//@rootContainer/@children.0/@children.1/@children.1/@properties.5"/>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="uitemplate:Container" componentDefinitionId="xcp_results_list" parent="//@rootContainer" widgetEntry="//@widgetMap[key='results_list']" dataService="//@dataSources[name='team_administration']">
+      <properties name="title" value="" entry="//@rootContainer/@children.1/@propertyMap.0"/>
+      <properties name="typeName" value="doc_team" entry="//@rootContainer/@children.1/@propertyMap.1"/>
+      <properties name="modelName" value="doc_team_administration_outputs" entry="//@rootContainer/@children.1/@propertyMap.2"/>
+      <properties name="storeId" value="team_administration" entry="//@rootContainer/@children.1/@propertyMap.3"/>
+      <properties name="initParams" value="" entry="//@rootContainer/@children.1/@propertyMap.4"/>
+      <properties name="selectionModelName" value="" entry="//@rootContainer/@children.1/@propertyMap.5"/>
+      <properties name="pageSize" value="10" type="INTEGER" entry="//@rootContainer/@children.1/@propertyMap.6"/>
+      <properties name="hidden" value="" entry="//@rootContainer/@children.1/@propertyMap.7"/>
+      <properties xsi:type="uitemplate:ArrayProperty" entry="//@rootContainer/@children.1/@propertyMap.8"/>
+      <properties xsi:type="uitemplate:ArrayProperty" entry="//@rootContainer/@children.1/@propertyMap.9"/>
+      <properties name="selectionModel" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@propertyMap.10"/>
+      <properties name="xcpId" value="results_list" entry="//@rootContainer/@children.1/@propertyMap.11"/>
+      <propertyMap key="title" value="//@rootContainer/@children.1/@properties.0"/>
+      <propertyMap key="typeName" value="//@rootContainer/@children.1/@properties.1"/>
+      <propertyMap key="modelName" value="//@rootContainer/@children.1/@properties.2"/>
+      <propertyMap key="storeId" value="//@rootContainer/@children.1/@properties.3"/>
+      <propertyMap key="initParams" value="//@rootContainer/@children.1/@properties.4"/>
+      <propertyMap key="selectionModelName" value="//@rootContainer/@children.1/@properties.5"/>
+      <propertyMap key="pageSize" value="//@rootContainer/@children.1/@properties.6"/>
+      <propertyMap key="hidden" value="//@rootContainer/@children.1/@properties.7"/>
+      <propertyMap key="facets" value="//@rootContainer/@children.1/@properties.8"/>
+      <propertyMap key="facetLabels" value="//@rootContainer/@children.1/@properties.9"/>
+      <propertyMap key="selectionModel" value="//@rootContainer/@children.1/@properties.10"/>
+      <propertyMap key="xcpId" value="//@rootContainer/@children.1/@properties.11"/>
+      <children componentDefinitionId="xcp_results_list_page_link_column" parent="//@rootContainer/@children.1" widgetEntry="//@widgetMap[key='results_list_page_link_column']" dataService="//@dataSources[name='team_administration']">
+        <properties name="text" value="Team Name" entry="//@rootContainer/@children.1/@children.0/@propertyMap.0"/>
+        <properties name="width" value="150" type="INTEGER" entry="//@rootContainer/@children.1/@children.0/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.1/@children.0/@propertyMap.2"/>
+        <properties name="dataIndex" value="object_name" entry="//@rootContainer/@children.1/@children.0/@propertyMap.3"/>
+        <properties name="valueType" value="STRING" entry="//@rootContainer/@children.1/@children.0/@propertyMap.4"/>
+        <properties name="isRepeating" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.0/@propertyMap.5"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.0/@propertyMap.6">
+          <formatter componentDefinitionId="xcp_repeating_attribute_formatter">
+            <properties name="xtype" value="xcp_repeating_attribute_formatter" entry="//@rootContainer/@children.1/@children.0/@properties.6/@formatter/@propertyMap.0"/>
+            <properties name="separatorStyle" value="NEWLINE" entry="//@rootContainer/@children.1/@children.0/@properties.6/@formatter/@propertyMap.1"/>
+            <properties name="separator" value="SEMICOLON" entry="//@rootContainer/@children.1/@children.0/@properties.6/@formatter/@propertyMap.2"/>
+            <propertyMap key="xtype" value="//@rootContainer/@children.1/@children.0/@properties.6/@formatter/@properties.0"/>
+            <propertyMap key="separatorStyle" value="//@rootContainer/@children.1/@children.0/@properties.6/@formatter/@properties.1"/>
+            <propertyMap key="separator" value="//@rootContainer/@children.1/@children.0/@properties.6/@formatter/@properties.2"/>
+          </formatter>
+        </properties>
+        <properties name="sortable" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.0/@propertyMap.7"/>
+        <properties name="menuDisabled" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.0/@propertyMap.8"/>
+        <properties name="xcpId" value="results_list_page_link_column" entry="//@rootContainer/@children.1/@children.0/@propertyMap.9"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.0/@propertyMap.10">
+          <formatter/>
+        </properties>
+        <propertyMap key="text" value="//@rootContainer/@children.1/@children.0/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.1/@children.0/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.1/@children.0/@properties.2"/>
+        <propertyMap key="dataIndex" value="//@rootContainer/@children.1/@children.0/@properties.3"/>
+        <propertyMap key="valueType" value="//@rootContainer/@children.1/@children.0/@properties.4"/>
+        <propertyMap key="isRepeating" value="//@rootContainer/@children.1/@children.0/@properties.5"/>
+        <propertyMap key="repeatingAttributeFormat" value="//@rootContainer/@children.1/@children.0/@properties.6"/>
+        <propertyMap key="sortable" value="//@rootContainer/@children.1/@children.0/@properties.7"/>
+        <propertyMap key="menuDisabled" value="//@rootContainer/@children.1/@children.0/@properties.8"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.1/@children.0/@properties.9"/>
+        <propertyMap key="format" value="//@rootContainer/@children.1/@children.0/@properties.10"/>
+      </children>
+      <children componentDefinitionId="xcp_results_list_column" parent="//@rootContainer/@children.1" widgetEntry="//@widgetMap[key='results_list_column']" dataService="//@dataSources[name='team_administration']">
+        <properties name="text" value="Product Manager" entry="//@rootContainer/@children.1/@children.1/@propertyMap.0"/>
+        <properties name="width" value="150" type="INTEGER" entry="//@rootContainer/@children.1/@children.1/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.1/@children.1/@propertyMap.2"/>
+        <properties name="dataIndex" value="product_manager" entry="//@rootContainer/@children.1/@children.1/@propertyMap.3"/>
+        <properties name="valueType" value="STRING" entry="//@rootContainer/@children.1/@children.1/@propertyMap.4"/>
+        <properties name="isRepeating" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.1/@propertyMap.5"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.1/@propertyMap.6">
+          <formatter componentDefinitionId="xcp_repeating_attribute_formatter">
+            <properties name="xtype" value="xcp_repeating_attribute_formatter" entry="//@rootContainer/@children.1/@children.1/@properties.6/@formatter/@propertyMap.0"/>
+            <properties name="separatorStyle" value="NEWLINE" entry="//@rootContainer/@children.1/@children.1/@properties.6/@formatter/@propertyMap.1"/>
+            <propertyMap key="xtype" value="//@rootContainer/@children.1/@children.1/@properties.6/@formatter/@properties.0"/>
+            <propertyMap key="separatorStyle" value="//@rootContainer/@children.1/@children.1/@properties.6/@formatter/@properties.1"/>
+          </formatter>
+        </properties>
+        <properties name="sortable" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.1/@propertyMap.7"/>
+        <properties name="menuDisabled" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.1/@propertyMap.8"/>
+        <properties name="xcpId" value="results_list_column" entry="//@rootContainer/@children.1/@children.1/@propertyMap.9"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.1/@propertyMap.10">
+          <formatter/>
+        </properties>
+        <propertyMap key="text" value="//@rootContainer/@children.1/@children.1/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.1/@children.1/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.1/@children.1/@properties.2"/>
+        <propertyMap key="dataIndex" value="//@rootContainer/@children.1/@children.1/@properties.3"/>
+        <propertyMap key="valueType" value="//@rootContainer/@children.1/@children.1/@properties.4"/>
+        <propertyMap key="isRepeating" value="//@rootContainer/@children.1/@children.1/@properties.5"/>
+        <propertyMap key="repeatingAttributeFormat" value="//@rootContainer/@children.1/@children.1/@properties.6"/>
+        <propertyMap key="sortable" value="//@rootContainer/@children.1/@children.1/@properties.7"/>
+        <propertyMap key="menuDisabled" value="//@rootContainer/@children.1/@children.1/@properties.8"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.1/@children.1/@properties.9"/>
+        <propertyMap key="format" value="//@rootContainer/@children.1/@children.1/@properties.10"/>
+      </children>
+      <children componentDefinitionId="xcp_results_list_column" parent="//@rootContainer/@children.1" widgetEntry="//@widgetMap[key='results_list_column1']" dataService="//@dataSources[name='team_administration']">
+        <properties name="text" value="Engineering Manager" entry="//@rootContainer/@children.1/@children.2/@propertyMap.0"/>
+        <properties name="width" value="150" type="INTEGER" entry="//@rootContainer/@children.1/@children.2/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.1/@children.2/@propertyMap.2"/>
+        <properties name="dataIndex" value="engineering_manager" entry="//@rootContainer/@children.1/@children.2/@propertyMap.3"/>
+        <properties name="valueType" value="STRING" entry="//@rootContainer/@children.1/@children.2/@propertyMap.4"/>
+        <properties name="isRepeating" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.2/@propertyMap.5"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.2/@propertyMap.6">
+          <formatter componentDefinitionId="xcp_repeating_attribute_formatter">
+            <properties name="xtype" value="xcp_repeating_attribute_formatter" entry="//@rootContainer/@children.1/@children.2/@properties.6/@formatter/@propertyMap.0"/>
+            <properties name="separatorStyle" value="NEWLINE" entry="//@rootContainer/@children.1/@children.2/@properties.6/@formatter/@propertyMap.1"/>
+            <properties name="separator" value="SEMICOLON" entry="//@rootContainer/@children.1/@children.2/@properties.6/@formatter/@propertyMap.2"/>
+            <propertyMap key="xtype" value="//@rootContainer/@children.1/@children.2/@properties.6/@formatter/@properties.0"/>
+            <propertyMap key="separatorStyle" value="//@rootContainer/@children.1/@children.2/@properties.6/@formatter/@properties.1"/>
+            <propertyMap key="separator" value="//@rootContainer/@children.1/@children.2/@properties.6/@formatter/@properties.2"/>
+          </formatter>
+        </properties>
+        <properties name="sortable" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.2/@propertyMap.7"/>
+        <properties name="menuDisabled" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.2/@propertyMap.8"/>
+        <properties name="xcpId" value="results_list_column1" entry="//@rootContainer/@children.1/@children.2/@propertyMap.9"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.2/@propertyMap.10">
+          <formatter/>
+        </properties>
+        <propertyMap key="text" value="//@rootContainer/@children.1/@children.2/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.1/@children.2/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.1/@children.2/@properties.2"/>
+        <propertyMap key="dataIndex" value="//@rootContainer/@children.1/@children.2/@properties.3"/>
+        <propertyMap key="valueType" value="//@rootContainer/@children.1/@children.2/@properties.4"/>
+        <propertyMap key="isRepeating" value="//@rootContainer/@children.1/@children.2/@properties.5"/>
+        <propertyMap key="repeatingAttributeFormat" value="//@rootContainer/@children.1/@children.2/@properties.6"/>
+        <propertyMap key="sortable" value="//@rootContainer/@children.1/@children.2/@properties.7"/>
+        <propertyMap key="menuDisabled" value="//@rootContainer/@children.1/@children.2/@properties.8"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.1/@children.2/@properties.9"/>
+        <propertyMap key="format" value="//@rootContainer/@children.1/@children.2/@properties.10"/>
+      </children>
+      <children componentDefinitionId="xcp_results_list_column" parent="//@rootContainer/@children.1" widgetEntry="//@widgetMap[key='results_list_column2']" dataService="//@dataSources[name='team_administration']">
+        <properties name="text" value="User Experience Designers" entry="//@rootContainer/@children.1/@children.3/@propertyMap.0"/>
+        <properties name="width" value="150" type="INTEGER" entry="//@rootContainer/@children.1/@children.3/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.1/@children.3/@propertyMap.2"/>
+        <properties name="dataIndex" value="user_experience_designers" entry="//@rootContainer/@children.1/@children.3/@propertyMap.3"/>
+        <properties name="valueType" value="STRING" entry="//@rootContainer/@children.1/@children.3/@propertyMap.4"/>
+        <properties name="isRepeating" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.3/@propertyMap.5"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.3/@propertyMap.6">
+          <formatter componentDefinitionId="xcp_repeating_attribute_formatter">
+            <properties name="xtype" value="xcp_repeating_attribute_formatter" entry="//@rootContainer/@children.1/@children.3/@properties.6/@formatter/@propertyMap.0"/>
+            <properties name="separatorStyle" value="NEWLINE" entry="//@rootContainer/@children.1/@children.3/@properties.6/@formatter/@propertyMap.1"/>
+            <properties name="separator" value="SEMICOLON" entry="//@rootContainer/@children.1/@children.3/@properties.6/@formatter/@propertyMap.2"/>
+            <propertyMap key="xtype" value="//@rootContainer/@children.1/@children.3/@properties.6/@formatter/@properties.0"/>
+            <propertyMap key="separatorStyle" value="//@rootContainer/@children.1/@children.3/@properties.6/@formatter/@properties.1"/>
+            <propertyMap key="separator" value="//@rootContainer/@children.1/@children.3/@properties.6/@formatter/@properties.2"/>
+          </formatter>
+        </properties>
+        <properties name="sortable" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.3/@propertyMap.7"/>
+        <properties name="menuDisabled" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.3/@propertyMap.8"/>
+        <properties name="xcpId" value="results_list_column2" entry="//@rootContainer/@children.1/@children.3/@propertyMap.9"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.3/@propertyMap.10">
+          <formatter/>
+        </properties>
+        <propertyMap key="text" value="//@rootContainer/@children.1/@children.3/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.1/@children.3/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.1/@children.3/@properties.2"/>
+        <propertyMap key="dataIndex" value="//@rootContainer/@children.1/@children.3/@properties.3"/>
+        <propertyMap key="valueType" value="//@rootContainer/@children.1/@children.3/@properties.4"/>
+        <propertyMap key="isRepeating" value="//@rootContainer/@children.1/@children.3/@properties.5"/>
+        <propertyMap key="repeatingAttributeFormat" value="//@rootContainer/@children.1/@children.3/@properties.6"/>
+        <propertyMap key="sortable" value="//@rootContainer/@children.1/@children.3/@properties.7"/>
+        <propertyMap key="menuDisabled" value="//@rootContainer/@children.1/@children.3/@properties.8"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.1/@children.3/@properties.9"/>
+        <propertyMap key="format" value="//@rootContainer/@children.1/@children.3/@properties.10"/>
+      </children>
+      <children componentDefinitionId="xcp_results_list_column" parent="//@rootContainer/@children.1" widgetEntry="//@widgetMap[key='results_list_column3']" dataService="//@dataSources[name='team_administration']">
+        <properties name="text" value="Documentation Writers" entry="//@rootContainer/@children.1/@children.4/@propertyMap.0"/>
+        <properties name="width" value="150" type="INTEGER" entry="//@rootContainer/@children.1/@children.4/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.1/@children.4/@propertyMap.2"/>
+        <properties name="dataIndex" value="documentation_writers" entry="//@rootContainer/@children.1/@children.4/@propertyMap.3"/>
+        <properties name="valueType" value="STRING" entry="//@rootContainer/@children.1/@children.4/@propertyMap.4"/>
+        <properties name="isRepeating" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.4/@propertyMap.5"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.4/@propertyMap.6">
+          <formatter componentDefinitionId="xcp_repeating_attribute_formatter">
+            <properties name="xtype" value="xcp_repeating_attribute_formatter" entry="//@rootContainer/@children.1/@children.4/@properties.6/@formatter/@propertyMap.0"/>
+            <properties name="separatorStyle" value="NEWLINE" entry="//@rootContainer/@children.1/@children.4/@properties.6/@formatter/@propertyMap.1"/>
+            <properties name="separator" value="SEMICOLON" entry="//@rootContainer/@children.1/@children.4/@properties.6/@formatter/@propertyMap.2"/>
+            <propertyMap key="xtype" value="//@rootContainer/@children.1/@children.4/@properties.6/@formatter/@properties.0"/>
+            <propertyMap key="separatorStyle" value="//@rootContainer/@children.1/@children.4/@properties.6/@formatter/@properties.1"/>
+            <propertyMap key="separator" value="//@rootContainer/@children.1/@children.4/@properties.6/@formatter/@properties.2"/>
+          </formatter>
+        </properties>
+        <properties name="sortable" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.4/@propertyMap.7"/>
+        <properties name="menuDisabled" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.4/@propertyMap.8"/>
+        <properties name="xcpId" value="results_list_column3" entry="//@rootContainer/@children.1/@children.4/@propertyMap.9"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.4/@propertyMap.10">
+          <formatter/>
+        </properties>
+        <propertyMap key="text" value="//@rootContainer/@children.1/@children.4/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.1/@children.4/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.1/@children.4/@properties.2"/>
+        <propertyMap key="dataIndex" value="//@rootContainer/@children.1/@children.4/@properties.3"/>
+        <propertyMap key="valueType" value="//@rootContainer/@children.1/@children.4/@properties.4"/>
+        <propertyMap key="isRepeating" value="//@rootContainer/@children.1/@children.4/@properties.5"/>
+        <propertyMap key="repeatingAttributeFormat" value="//@rootContainer/@children.1/@children.4/@properties.6"/>
+        <propertyMap key="sortable" value="//@rootContainer/@children.1/@children.4/@properties.7"/>
+        <propertyMap key="menuDisabled" value="//@rootContainer/@children.1/@children.4/@properties.8"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.1/@children.4/@properties.9"/>
+        <propertyMap key="format" value="//@rootContainer/@children.1/@children.4/@properties.10"/>
+      </children>
+      <children componentDefinitionId="xcp_results_list_column" parent="//@rootContainer/@children.1" widgetEntry="//@widgetMap[key='results_list_column4']" dataService="//@dataSources[name='team_administration']">
+        <properties name="text" value="Engineers" entry="//@rootContainer/@children.1/@children.5/@propertyMap.0"/>
+        <properties name="width" value="150" type="INTEGER" entry="//@rootContainer/@children.1/@children.5/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.1/@children.5/@propertyMap.2"/>
+        <properties name="dataIndex" value="engineers" entry="//@rootContainer/@children.1/@children.5/@propertyMap.3"/>
+        <properties name="valueType" value="STRING" entry="//@rootContainer/@children.1/@children.5/@propertyMap.4"/>
+        <properties name="isRepeating" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.5/@propertyMap.5"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.5/@propertyMap.6">
+          <formatter componentDefinitionId="xcp_repeating_attribute_formatter">
+            <properties name="xtype" value="xcp_repeating_attribute_formatter" entry="//@rootContainer/@children.1/@children.5/@properties.6/@formatter/@propertyMap.0"/>
+            <properties name="separatorStyle" value="NEWLINE" entry="//@rootContainer/@children.1/@children.5/@properties.6/@formatter/@propertyMap.1"/>
+            <properties name="separator" value="SEMICOLON" entry="//@rootContainer/@children.1/@children.5/@properties.6/@formatter/@propertyMap.2"/>
+            <propertyMap key="xtype" value="//@rootContainer/@children.1/@children.5/@properties.6/@formatter/@properties.0"/>
+            <propertyMap key="separatorStyle" value="//@rootContainer/@children.1/@children.5/@properties.6/@formatter/@properties.1"/>
+            <propertyMap key="separator" value="//@rootContainer/@children.1/@children.5/@properties.6/@formatter/@properties.2"/>
+          </formatter>
+        </properties>
+        <properties name="sortable" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.5/@propertyMap.7"/>
+        <properties name="menuDisabled" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.5/@propertyMap.8"/>
+        <properties name="xcpId" value="results_list_column4" entry="//@rootContainer/@children.1/@children.5/@propertyMap.9"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.5/@propertyMap.10">
+          <formatter/>
+        </properties>
+        <propertyMap key="text" value="//@rootContainer/@children.1/@children.5/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.1/@children.5/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.1/@children.5/@properties.2"/>
+        <propertyMap key="dataIndex" value="//@rootContainer/@children.1/@children.5/@properties.3"/>
+        <propertyMap key="valueType" value="//@rootContainer/@children.1/@children.5/@properties.4"/>
+        <propertyMap key="isRepeating" value="//@rootContainer/@children.1/@children.5/@properties.5"/>
+        <propertyMap key="repeatingAttributeFormat" value="//@rootContainer/@children.1/@children.5/@properties.6"/>
+        <propertyMap key="sortable" value="//@rootContainer/@children.1/@children.5/@properties.7"/>
+        <propertyMap key="menuDisabled" value="//@rootContainer/@children.1/@children.5/@properties.8"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.1/@children.5/@properties.9"/>
+        <propertyMap key="format" value="//@rootContainer/@children.1/@children.5/@properties.10"/>
+      </children>
+      <children componentDefinitionId="xcp_results_list_column" parent="//@rootContainer/@children.1" widgetEntry="//@widgetMap[key='results_list_column5']" dataService="//@dataSources[name='team_administration']">
+        <properties name="text" value="Quality Engineers" entry="//@rootContainer/@children.1/@children.6/@propertyMap.0"/>
+        <properties name="width" value="150" type="INTEGER" entry="//@rootContainer/@children.1/@children.6/@propertyMap.1"/>
+        <properties name="minWidth" value="" type="INTEGER" entry="//@rootContainer/@children.1/@children.6/@propertyMap.2"/>
+        <properties name="dataIndex" value="quality_engineers" entry="//@rootContainer/@children.1/@children.6/@propertyMap.3"/>
+        <properties name="valueType" value="STRING" entry="//@rootContainer/@children.1/@children.6/@propertyMap.4"/>
+        <properties name="isRepeating" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.6/@propertyMap.5"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.6/@propertyMap.6">
+          <formatter componentDefinitionId="xcp_repeating_attribute_formatter">
+            <properties name="xtype" value="xcp_repeating_attribute_formatter" entry="//@rootContainer/@children.1/@children.6/@properties.6/@formatter/@propertyMap.0"/>
+            <properties name="separatorStyle" value="NEWLINE" entry="//@rootContainer/@children.1/@children.6/@properties.6/@formatter/@propertyMap.1"/>
+            <properties name="separator" value="SEMICOLON" entry="//@rootContainer/@children.1/@children.6/@properties.6/@formatter/@propertyMap.2"/>
+            <propertyMap key="xtype" value="//@rootContainer/@children.1/@children.6/@properties.6/@formatter/@properties.0"/>
+            <propertyMap key="separatorStyle" value="//@rootContainer/@children.1/@children.6/@properties.6/@formatter/@properties.1"/>
+            <propertyMap key="separator" value="//@rootContainer/@children.1/@children.6/@properties.6/@formatter/@properties.2"/>
+          </formatter>
+        </properties>
+        <properties name="sortable" value="false" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.6/@propertyMap.7"/>
+        <properties name="menuDisabled" value="true" type="BOOLEAN" entry="//@rootContainer/@children.1/@children.6/@propertyMap.8"/>
+        <properties name="xcpId" value="results_list_column5" entry="//@rootContainer/@children.1/@children.6/@propertyMap.9"/>
+        <properties xsi:type="uitemplate:ObjectProperty" entry="//@rootContainer/@children.1/@children.6/@propertyMap.10">
+          <formatter/>
+        </properties>
+        <propertyMap key="text" value="//@rootContainer/@children.1/@children.6/@properties.0"/>
+        <propertyMap key="width" value="//@rootContainer/@children.1/@children.6/@properties.1"/>
+        <propertyMap key="minWidth" value="//@rootContainer/@children.1/@children.6/@properties.2"/>
+        <propertyMap key="dataIndex" value="//@rootContainer/@children.1/@children.6/@properties.3"/>
+        <propertyMap key="valueType" value="//@rootContainer/@children.1/@children.6/@properties.4"/>
+        <propertyMap key="isRepeating" value="//@rootContainer/@children.1/@children.6/@properties.5"/>
+        <propertyMap key="repeatingAttributeFormat" value="//@rootContainer/@children.1/@children.6/@properties.6"/>
+        <propertyMap key="sortable" value="//@rootContainer/@children.1/@children.6/@properties.7"/>
+        <propertyMap key="menuDisabled" value="//@rootContainer/@children.1/@children.6/@properties.8"/>
+        <propertyMap key="xcpId" value="//@rootContainer/@children.1/@children.6/@properties.9"/>
+        <propertyMap key="format" value="//@rootContainer/@children.1/@children.6/@properties.10"/>
+      </children>
+    </children>
+  </rootContainer>
+  <widgetMap key="root" value="//@rootContainer"/>
+  <widgetMap key="rich_text" value="//@rootContainer/@children.0/@children.0/@children.0"/>
+  <widgetMap key="column_box" value="//@rootContainer/@children.0"/>
+  <widgetMap key="columnvbox" value="//@rootContainer/@children.0/@children.0"/>
+  <widgetMap key="columnvbox1" value="//@rootContainer/@children.0/@children.1"/>
+  <widgetMap key="results_list" value="//@rootContainer/@children.1"/>
+  <widgetMap key="results_list_page_link_column" value="//@rootContainer/@children.1/@children.0"/>
+  <widgetMap key="results_list_column" value="//@rootContainer/@children.1/@children.1"/>
+  <widgetMap key="results_list_column1" value="//@rootContainer/@children.1/@children.2"/>
+  <widgetMap key="results_list_column2" value="//@rootContainer/@children.1/@children.3"/>
+  <widgetMap key="results_list_column3" value="//@rootContainer/@children.1/@children.4"/>
+  <widgetMap key="results_list_column4" value="//@rootContainer/@children.1/@children.5"/>
+  <widgetMap key="results_list_column5" value="//@rootContainer/@children.1/@children.6"/>
+  <widgetMap key="button" value="//@rootContainer/@children.0/@children.1/@children.1"/>
+  <widgetMap key="button1" value="//@rootContainer/@children.0/@children.1/@children.0"/>
+  <dataSources categoryId="com.emc.xcp.artifact.dataservice.datasource" name="team_administration" label="Team Administration">
+    <contract xsi:type="nsDataserviceContract:DataSourceContract" href="urn:doc:com.emc.xcp.artifact.search.realtime:Artifacts/Real-time Queries/team_administration.realtime#//@datasource"/>
+  </dataSources>
+</uitemplate:Page>

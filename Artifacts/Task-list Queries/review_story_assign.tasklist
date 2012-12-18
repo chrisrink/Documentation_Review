@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasklist:TaskListSearch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fulltext="http://xcp.emc.com/search/fulltext" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:tasklist="http://xcp.emc.com/search/tasklist" urn="urn:doc:com.emc.xcp.artifact.search.tasklist:Artifacts/Task-list Queries/review_story_assign.tasklist" categoryId="com.emc.xcp.artifact.search.tasklist" name="review_story_assign" label="Review Story - Assigned Reviewer" assignment="ANY_USER" origin="SPECIFIC_PROCESS">
+  <datasource categoryId="com.emc.xcp.artifact.dataservice.datasourcecontract" name="review_story_assign" label="Review Story - Assigned Reviewer" implCategoryId="com.emc.xcp.artifact.search.tasklist">
+    <inputs xsi:type="nsDataserviceContract:IdElement" name="input_object_id" label="Object ID">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="input_state" label="State">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </inputs>
+    <outputs xsi:type="nsDataserviceContract:AttributeElement" name="Result Count">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </outputs>
+    <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+      <item xsi:type="nsDataserviceContract:StructureElement" name="Items">
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="task_performer_name" label="Performer Name">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="task_state" label="State">
+          <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="workqueue_name" label="Work Queue Name" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="task_name" label="Task Name" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="process_system_name" label="Process System Name" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="activity_system_name" label="Activity System Name" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="is_rejectable" label="Is Rejectable" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:BooleanType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="is_repeatable" label="Is Repeatable" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:BooleanType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="is_delegable" label="Is Delegable" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:BooleanType"/>
+        </elements>
+      </item>
+    </outputs>
+    <primaryElement>
+      <dataModel href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+    </primaryElement>
+  </datasource>
+  <inputParameters label="Object ID" name="object_id">
+    <formInputs xsi:type="fulltext:FullTextFormInput" operator="com.emc.xcp.model.common.StringOperator:EQUAL" isFuzzy="true">
+      <contextSelection>
+        <parentRef>
+          <parentRef selectionName="packages" selectionLabel="Packages">
+            <parentRef selectionName="task_list" selectionLabel="Task List"/>
+          </parentRef>
+          <dataRef href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+        </parentRef>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='r_object_id']"/>
+      </contextSelection>
+    </formInputs>
+  </inputParameters>
+  <inputParameters label="State" name="state">
+    <formInputs operator="com.emc.xcp.model.common.NumericOperator:EQUAL">
+      <contextSelection>
+        <parentRef>
+          <parentRef selectionName="task_list" selectionLabel="Task List"/>
+          <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+        </parentRef>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#//@attributes.7"/>
+      </contextSelection>
+    </formInputs>
+  </inputParameters>
+  <columns label="Performer Name">
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#//@attributes.8"/>
+    </contextSelection>
+  </columns>
+  <columns label="State">
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#//@attributes.7"/>
+    </contextSelection>
+  </columns>
+  <defaultSort>
+    <contextSelection>
+      <parentRef>
+        <parentRef selectionName="task_list" selectionLabel="Task List"/>
+        <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.task:Artifacts/Tasks/OOTBTask.task#//@attributes.4"/>
+    </contextSelection>
+  </defaultSort>
+  <processes href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#/"/>
+</tasklist:TaskListSearch>

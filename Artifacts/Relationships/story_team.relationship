@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsDatatypes:Relation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" urn="urn:doc:com.emc.xcp.artifact.relation:Artifacts/Relationships/story_team.relationship" categoryId="com.emc.xcp.artifact.relation" name="story_team" label="Story-Team" targetRoleName="team" targetRoleLabel="Team" fromCardinality="-1" subjectRoleName="stories" subjectRoleLabel="Stories" toCardinality="1" bidirectional="true">
+  <from xsi:type="nsDatatypes:Folder" href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+  <to xsi:type="nsDatatypes:BusinessObject" href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_relate_story_team_story" label="Relate Story-Team Story" implCategoryId="com.emc.xcp.artifact.relation">
+    <primaryElement dataModel="/"/>
+    <actionType xsi:type="nsDataserviceContract:RelateActionType" type="Relate">
+      <target href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+    </actionType>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_relate_story_team_team" label="Relate Story-Team Team" implCategoryId="com.emc.xcp.artifact.relation">
+    <primaryElement dataModel="/"/>
+    <actionType xsi:type="nsDataserviceContract:RelateActionType" type="Relate">
+      <target href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+    </actionType>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_update_story_team" label="Update Story-Team" implCategoryId="com.emc.xcp.artifact.relation">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Update"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_delete_story_team" label="Delete Story-Team" implCategoryId="com.emc.xcp.artifact.relation">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Delete"/>
+  </dataActionContracts>
+</nsDatatypes:Relation>

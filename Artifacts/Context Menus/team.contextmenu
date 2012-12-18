@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contextmenu:ContextMenu xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:contextmenu="http://www.emc.com/xcp2/2010/contextmenu" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" urn="urn:doc:com.emc.xcp.artifact.contextmenu:Artifacts/Context Menus/team.contextmenu" categoryId="com.emc.xcp.artifact.contextmenu" name="team" label="Context Menu">
+  <primaryModel href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#/"/>
+  <items xsi:type="contextmenu:GotoPageItem" label="Edit Team">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_gotopage"/>
+    <actionProperties name="default_link" value="false" type="BOOLEAN"/>
+    <page href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/edit_team.page#/"/>
+  </items>
+  <items xsi:type="contextmenu:GotoPageItem" label="View Team">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="xcp_gotopage"/>
+    <actionProperties name="default_link" value="false" type="BOOLEAN"/>
+    <page href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/view_team.page#/"/>
+  </items>
+  <items xsi:type="contextmenu:SeperatorItem"/>
+  <items xsi:type="contextmenu:DataActionItem" label="Delete">
+    <actionProperties name="isHidden" value="" type="BOOLEAN"/>
+    <actionProperties name="isDisabled" value="" type="BOOLEAN"/>
+    <actionProperties name="menu_action_name" value="delete"/>
+    <actionProperties name="showConfirmation" value="true" type="BOOLEAN"/>
+    <actionProperties name="showSuccess" value="true" type="BOOLEAN"/>
+    <actionProperties name="redirect_style" value="application" type="BOOLEAN"/>
+    <dataAction>
+      <contract xsi:type="nsDataserviceContract:DataActionContract" href="urn:doc:com.emc.xcp.artifact.bo:Artifacts/Business Objects/team.businessobj#//@dataActionContracts[name='da_def_delete_team']"/>
+    </dataAction>
+    <redirectPage href="urn:doc:com.emc.xcp.artifact.page:Artifacts/Pages/manage_app_role.page#/"/>
+  </items>
+</contextmenu:ContextMenu>

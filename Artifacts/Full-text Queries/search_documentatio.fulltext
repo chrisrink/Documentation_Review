@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fulltext:FullTextSearch xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fulltext="http://xcp.emc.com/search/fulltext" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" xmlns:nsPicklist="http://xcp.emc.com/picklist" urn="urn:doc:com.emc.xcp.artifact.search.fulltext:Artifacts/Full-text Queries/search_documentatio.fulltext" categoryId="com.emc.xcp.artifact.search.fulltext" name="search_documentatio" label="Search Documentation" summaryColumn="true">
+  <datasource categoryId="com.emc.xcp.artifact.dataservice.datasourcecontract" name="search_documentatio" label="Search Documentation" implCategoryId="com.emc.xcp.artifact.search.fulltext">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="q" label="Full-Text">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <outputs xsi:type="nsDataserviceContract:AttributeElement" name="Result Count">
+      <attributeType xsi:type="nsAttributeDatatypes:IntegerType"/>
+    </outputs>
+    <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+      <item xsi:type="nsDataserviceContract:StructureElement" name="Items">
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="object_name" label="Name">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="team_name" label="Team name">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="story_name" label="Story name">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="r_modify_date" label="Last changed">
+          <attributeType xsi:type="nsAttributeDatatypes:DateTimeType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="id" label="Object ID" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="r_object_type" label="Object type" sortable="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="summary" label="Summary" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="matchingterms" label="MatchingTerms" repeating="true" hidden="true">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+      </item>
+    </outputs>
+    <primaryElement>
+      <dataModel href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+    </primaryElement>
+    <facets name="facet_last_changed" label="Last changed">
+      <facetType xsi:type="nsDataserviceContract:EnumTypeFacet">
+        <type xsi:type="nsAttributeDatatypes:DateTimeType"/>
+        <entries value="LAST_YEAR" label="Last Year"/>
+        <entries value="TODAY" label="Today"/>
+        <entries value="LAST_MONTH" label="Last Month"/>
+        <entries value="THIS_YEAR" label="This Year"/>
+        <entries value="YESTERDAY" label="Yesterday"/>
+        <entries value="THIS_WEEK" label="This Week"/>
+        <entries value="OLDER" label="Older"/>
+        <entries value="THIS_MONTH" label="This Month"/>
+      </facetType>
+    </facets>
+    <facets name="facet_contenttype" label="Format">
+      <facetType xsi:type="nsDataserviceContract:AttributeDataTypeFacet">
+        <attributeType xsi:type="nsAttributeDatatypes:StringType" href="urn:xcp:com.emc.xcp.artifact.doc:Artifacts/Content/dm_document.content#//@attributes[name='a_content_type']/@type"/>
+      </facetType>
+    </facets>
+    <facets name="facet_team_name" label="Team name">
+      <facetType xsi:type="nsDataserviceContract:AttributeDataTypeFacet">
+        <attributeType xsi:type="nsAttributeDatatypes:StringType" href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#//@attributes[name='team_name']/@type"/>
+      </facetType>
+    </facets>
+    <facets name="facet_iteration" label="Iteration">
+      <facetType xsi:type="nsDataserviceContract:AttributeDataTypeFacet">
+        <attributeType xsi:type="nsPicklist:PickListType" href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#//@attributes[name='iteration']/@type"/>
+      </facetType>
+    </facets>
+    <facets name="facet_story_name" label="Story name">
+      <facetType xsi:type="nsDataserviceContract:AttributeDataTypeFacet">
+        <attributeType xsi:type="nsAttributeDatatypes:StringType" href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#//@attributes[name='story_name']/@type"/>
+      </facetType>
+    </facets>
+  </datasource>
+  <columns label="Name">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='object_name']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Team name">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#//@attributes[name='team_name']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Story name">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#//@attributes[name='story_name']"/>
+    </contextSelection>
+  </columns>
+  <columns label="Last changed">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='r_modify_date']"/>
+    </contextSelection>
+  </columns>
+  <defaultSort/>
+  <dataType xsi:type="nsDatatypes:Document" href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+  <filters xsi:type="fulltext:DateFilter" name="last_changed" label="Last changed" distinctValues="false">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.basetype:Artifacts/Base Type/basetype.basetype#//@attributes[name='r_modify_date']"/>
+    </contextSelection>
+    <groupBy xsi:type="fulltext:DateGroupBy" range="RELATIVEDATES"/>
+  </filters>
+  <filters xsi:type="fulltext:StringFilter" name="contenttype" label="Format" orderBy="FREQUENCY">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+      </parentRef>
+      <dataRef href="urn:xcp:com.emc.xcp.artifact.doc:Artifacts/Content/dm_document.content#//@attributes[name='a_content_type']"/>
+    </contextSelection>
+    <groupBy xsi:type="fulltext:StringGroupBy"/>
+  </filters>
+  <filters xsi:type="fulltext:StringFilter" name="team_name" label="Team name" orderBy="FREQUENCY">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#//@attributes[name='team_name']"/>
+    </contextSelection>
+    <groupBy xsi:type="fulltext:StringGroupBy"/>
+  </filters>
+  <filters xsi:type="fulltext:StringFilter" name="iteration" label="Iteration" orderBy="FREQUENCY">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#//@attributes[name='iteration']"/>
+    </contextSelection>
+    <groupBy xsi:type="fulltext:StringGroupBy"/>
+  </filters>
+  <filters xsi:type="fulltext:StringFilter" name="story_name" label="Story name" orderBy="FREQUENCY">
+    <contextSelection>
+      <parentRef>
+        <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+      </parentRef>
+      <dataRef href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#//@attributes[name='story_name']"/>
+    </contextSelection>
+    <groupBy xsi:type="fulltext:StringGroupBy"/>
+  </filters>
+</fulltext:FullTextSearch>

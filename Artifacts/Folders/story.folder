@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsDatatypes:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" xmlns:nsPicklist="http://xcp.emc.com/picklist" urn="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder" categoryId="com.emc.xcp.artifact.folder" name="story" label="Story" commentable="true">
+  <attributes name="iteration" label="Iteration">
+    <type xsi:type="nsPicklist:PickListType">
+      <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/iteration.picklist#/"/>
+    </type>
+  </attributes>
+  <attributes name="status" label="Status">
+    <type xsi:type="nsPicklist:PickListType">
+      <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/status.picklist#/"/>
+    </type>
+    <defaultValue exprStr="'In Progress'"/>
+  </attributes>
+  <attributes name="review_process_id" label="Review Process ID">
+    <type xsi:type="nsAttributeDatatypes:StringType" length="64"/>
+  </attributes>
+  <attributes name="description" label="Description">
+    <type xsi:type="nsAttributeDatatypes:StringType" length="1000"/>
+  </attributes>
+  <attributes name="ismmf" label="isMMF">
+    <type xsi:type="nsAttributeDatatypes:BooleanType"/>
+  </attributes>
+  <eventConfigs label="State Change" description="">
+    <triggerType type="UPDATED"/>
+    <condition exprStr="event.story.status != event.old_story.status"/>
+  </eventConfigs>
+  <accessControlPolicy>
+    <default href="urn:doc:com.emc.xcp.artifact.permissionset:Artifacts/Permission Sets/story_permissions.permissionset#/"/>
+  </accessControlPolicy>
+  <defaultFolderPath exprStr="parameters.doc.stories_home"/>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_create_story" label="Create Story" implCategoryId="com.emc.xcp.artifact.folder">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="description" label="Description">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="ismmf" label="isMMF">
+      <attributeType xsi:type="nsAttributeDatatypes:BooleanType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="iteration" label="Iteration">
+      <attributeType xsi:type="nsPicklist:PickListType">
+        <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/iteration.picklist#/"/>
+      </attributeType>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="review_process_id" label="Review Process ID">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="status" label="Status">
+      <attributeType xsi:type="nsPicklist:PickListType">
+        <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/status.picklist#/"/>
+      </attributeType>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Create"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_update_story" label="Update Story" implCategoryId="com.emc.xcp.artifact.folder">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="description" label="Description">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="ismmf" label="isMMF">
+      <attributeType xsi:type="nsAttributeDatatypes:BooleanType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="iteration" label="Iteration">
+      <attributeType xsi:type="nsPicklist:PickListType">
+        <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/iteration.picklist#/"/>
+      </attributeType>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="review_process_id" label="Review Process ID">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="status" label="Status">
+      <attributeType xsi:type="nsPicklist:PickListType">
+        <pickList href="urn:doc:com.emc.xcp.artifact.picklist:Artifacts/Picklists/status.picklist#/"/>
+      </attributeType>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Update"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_delete_story" label="Delete Story" implCategoryId="com.emc.xcp.artifact.folder">
+    <primaryElement dataModel="/"/>
+    <actionType type="Delete"/>
+  </dataActionContracts>
+  <superType xsi:type="nsDatatypes:Folder" href="urn:xcp:com.emc.xcp.artifact.folder:Artifacts/Folders/dm_folder.folder#/"/>
+</nsDatatypes:Folder>

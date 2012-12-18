@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nsDatatypes:Relation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" xmlns:nsDatatypes="http://xcp.emc.com/datatypes" urn="urn:doc:com.emc.xcp.artifact.relation:Artifacts/Relationships/documentation_story.relationship" categoryId="com.emc.xcp.artifact.relation" name="documentation_story" label="Documentation-Story" targetRoleName="story" targetRoleLabel="Story" fromCardinality="-1" subjectRoleName="documentation" subjectRoleLabel="Documentation" toCardinality="1" bidirectional="true">
+  <from xsi:type="nsDatatypes:Document" href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+  <to xsi:type="nsDatatypes:Folder" href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_relate_documentation_story_documentation" label="Relate Documentation-Story Documentation" implCategoryId="com.emc.xcp.artifact.relation">
+    <primaryElement dataModel="/"/>
+    <actionType xsi:type="nsDataserviceContract:RelateActionType" type="Relate">
+      <target href="urn:doc:com.emc.xcp.artifact.doc:Artifacts/Content/documentation.content#/"/>
+    </actionType>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_relate_documentation_story_story" label="Relate Documentation-Story Story" implCategoryId="com.emc.xcp.artifact.relation">
+    <primaryElement dataModel="/"/>
+    <actionType xsi:type="nsDataserviceContract:RelateActionType" type="Relate">
+      <target href="urn:doc:com.emc.xcp.artifact.folder:Artifacts/Folders/story.folder#/"/>
+    </actionType>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_update_documentation_story" label="Update Documentation-Story" implCategoryId="com.emc.xcp.artifact.relation">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Update"/>
+  </dataActionContracts>
+  <dataActionContracts categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="da_def_delete_documentation_story" label="Delete Documentation-Story" implCategoryId="com.emc.xcp.artifact.relation">
+    <inputs xsi:type="nsDataserviceContract:AttributeElement" name="id">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <primaryElement dataModel="/"/>
+    <actionType type="Delete"/>
+  </dataActionContracts>
+</nsDatatypes:Relation>

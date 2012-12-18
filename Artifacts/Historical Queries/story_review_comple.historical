@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasourcehistorical:HistoricalDatasource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datasourcecommon="http://documentum.emc.com/artifact/datasourcecommon" xmlns:datasourcehistorical="http://documentum.emc.com/artifact/datasourcehistorical" xmlns:nsAttributeDatatypes="http://xcp.emc.com/attribute_datatypes" xmlns:nsDataserviceContract="http://xcp.emc.com/DataserviceContract" urn="urn:doc:com.emc.xcp.artifact.datasourcehistorical:Artifacts/Historical Queries/story_review_comple.historical" categoryId="com.emc.xcp.artifact.datasourcehistorical" name="story_review_comple" label="Story Review - Completed Reviews" rootEntity="//@datasourceEntities.0" firstCalculationLevel="//@datasourceCalculations.0">
+  <datasourceEntities xsi:type="datasourcehistorical:DatasourceEntity" instanceId="RqNEq5j4ac8DOcIhsN2eL" path="process" artifactType="Process">
+    <source href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#/"/>
+    <fields xsi:type="datasourcecommon:ProcessField" name="performer" label="Performer" instanceId="4JqHHBw1Q4zbxtg1a8taM*" fieldPath="event.process.task.performer" event="//@subscribedEvents.0">
+      <source href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#/"/>
+      <activity href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#//@activities[name='Review%20by%20team']"/>
+      <type xsi:type="nsAttributeDatatypes:StringType"/>
+    </fields>
+    <fields xsi:type="datasourcecommon:ProcessField" name="p_id" label="Process Instance ID" instanceId="eUvTHWZM4D09B4a4ydYufc" fieldPath="event.process.process_instance.id" columnIndex="1" event="//@subscribedEvents.0">
+      <source href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#/"/>
+      <type xsi:type="nsAttributeDatatypes:StringType"/>
+    </fields>
+    <fields xsi:type="datasourcecommon:EventField" name="createdon" label="Created on" instanceId="4ZIFqgrVQ6PbF*jxU+jeph" fieldPath="event.createdOn" columnIndex="2" event="//@subscribedEvents.0" source="//@subscribedEvents.0">
+      <type xsi:type="nsAttributeDatatypes:DateTimeType"/>
+    </fields>
+  </datasourceEntities>
+  <datasourceCalculations label="Basic step">
+    <calculationFields name="performer" label="Performer" instanceId="9C*5jaSIAnQ8H+Btaa5V4y" source="//@datasourceEntities.0/@fields.0">
+      <dataType xsi:type="nsAttributeDatatypes:StringType"/>
+    </calculationFields>
+    <calculationFields name="p_id" label="Process Instance ID" instanceId="94XM35JmAjh9ByinBNmUnn" columnIndex="1" source="//@datasourceEntities.0/@fields.1">
+      <dataType xsi:type="nsAttributeDatatypes:StringType"/>
+    </calculationFields>
+    <calculationFields name="createdon" label="Created on" instanceId="cH5BncdhQzJ8A*HtW+efSN" columnIndex="2" source="//@datasourceEntities.0/@fields.2">
+      <dataType xsi:type="nsAttributeDatatypes:DateTimeType"/>
+    </calculationFields>
+  </datasourceCalculations>
+  <subscribedEvents xsi:type="datasourcecommon:ActivityEventSubscription">
+    <event href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#//@activities[name='Review%20by%20team']/@eventConfigs[label='Task%20Completed']"/>
+    <source href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#/"/>
+    <activity href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#//@activities[name='Review%20by%20team']"/>
+  </subscribedEvents>
+  <runtimeAuditFilters xsi:type="datasourcehistorical:RuntimeSimpleFilter" name="id_1" label="Process Instance ID 1" source="//@datasourceCalculations.0/@calculationFields.1">
+    <valueType xsi:type="datasourcehistorical:SimpleFilterValueType" operator="com.emc.xcp.model.common.StringOperator:EQUAL"/>
+  </runtimeAuditFilters>
+  <dataServiceContracts xsi:type="nsDataserviceContract:DataSourceContract" categoryId="com.emc.xcp.artifact.dataservice.datasourcecontract" name="story_review_comple" label="Story Review - Completed Reviews" implCategoryId="com.emc.xcp.artifact.datasourcehistorical">
+    <inputs xsi:type="nsDataserviceContract:IdElement" name="input_id_1" label="Process Instance ID 1">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+      <item xsi:type="nsDataserviceContract:StructureElement" name="Items">
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="performer" label="Performer">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="p_id" label="Process Instance ID">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="createdon" label="Created on">
+          <attributeType xsi:type="nsAttributeDatatypes:DateTimeType"/>
+        </elements>
+      </item>
+    </outputs>
+    <primaryElement name="story_review">
+      <dataModel href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#/"/>
+    </primaryElement>
+  </dataServiceContracts>
+  <dataServiceContracts xsi:type="nsDataserviceContract:DataActionContract" categoryId="com.emc.xcp.artifact.dataservice.dataactioncontract" name="story_review_comple" label="Story Review - Completed Reviews" implCategoryId="com.emc.xcp.artifact.datasourcehistorical">
+    <inputs xsi:type="nsDataserviceContract:IdElement" name="input_id_1" label="Process Instance ID 1">
+      <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+    </inputs>
+    <outputs xsi:type="nsDataserviceContract:ArrayElement" name="Results">
+      <item xsi:type="nsDataserviceContract:StructureElement" name="Items">
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="performer" label="Performer">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="p_id" label="Process Instance ID">
+          <attributeType xsi:type="nsAttributeDatatypes:StringType"/>
+        </elements>
+        <elements xsi:type="nsDataserviceContract:AttributeElement" name="createdon" label="Created on">
+          <attributeType xsi:type="nsAttributeDatatypes:DateTimeType"/>
+        </elements>
+      </item>
+    </outputs>
+    <primaryElement name="story_review">
+      <dataModel href="urn:doc:com.emc.ide.artifact.process:Artifacts/Processes/story_review.process#/"/>
+    </primaryElement>
+    <actionType type="Export"/>
+  </dataServiceContracts>
+</datasourcehistorical:HistoricalDatasource>
